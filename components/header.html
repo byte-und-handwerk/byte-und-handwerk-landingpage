@@ -1,29 +1,35 @@
-<header class="bg-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-xl">
-    <nav class="container mx-auto flex justify-between items-center" aria-label="Hauptnavigation">
-        <a href="index.html" class="flex items-center" aria-label="Startseite">
-            <!-- Logo aus dem Hauptverzeichnis geladen -->
-            <img src="byte&Handwerk_logo.png"
-                 onerror="this.onerror=null;this.src='https://placehold.co/150x48/1d4ed8/FFFFFF?text=byte+%26+Handwerk'"
-                 alt="Logo von byte & Handwerk" class="h-10 md:h-12 w-auto" loading="eager">
+<!-- Neues Header-Design mit Background #182025 -->
+<header class="bg-[#182025] shadow-lg py-4 px-6 md:px-12 fixed w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center">
+        
+        <!-- Dein neues Logo als Bilddatei -->
+        <a href="index.html" class="flex items-center transition duration-300 hover:opacity-90">
+            <!-- WICHTIG: Tausche 'logo.png' gegen den tatsächlichen Dateinamen deines neuen Logos aus -->
+            <img src="byte&Handwerk_logo.png" alt="byte & Handwerk Logo" class="h-12 md:h-16 w-auto">
         </a>
-        <div class="hidden md:flex space-x-8">
-            <a href="#so-funktionierts" class="text-gray-700 hover:text-primary-green hover:underline underline-offset-4 font-medium transition duration-300">So funktioniert's</a>
-            <a href="#digital-check" class="text-gray-700 hover:text-primary-green hover:underline underline-offset-4 font-medium transition duration-300">Digital-Check</a>
-            <a href="#kontakt" class="text-gray-700 hover:text-primary-green hover:underline underline-offset-4 font-medium transition duration-300">Kontakt</a>
+
+        <!-- Desktop Menu (Texte auf #bfbfbf angepasst für den dunklen Hintergrund) -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html#features" class="text-[#bfbfbf] hover:text-white font-medium transition duration-300">Funktionen</a>
+            <a href="partner.html" class="text-[#bfbfbf] hover:text-white font-medium transition duration-300">Über mich</a>
+            <a href="mission.html" class="text-[#bfbfbf] hover:text-white font-medium transition duration-300">Mission</a>
+            <a href="index.html#kontakt" class="bg-primary-green text-white font-bold py-2.5 px-6 rounded-full hover:bg-green-600 transition duration-300 shadow-md">Kontakt</a>
         </div>
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-gray-700 focus:outline-none" aria-label="Menü öffnen" aria-expanded="false">
-                <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
-            </button>
-        </div>
-    </nav>
-    
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-6" role="dialog" aria-modal="true" aria-label="Mobiles Menü">
-        <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 focus:outline-none" aria-label="Menü schließen">
-            <i class="fas fa-times text-3xl" aria-hidden="true"></i>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-white hover:text-primary-green focus:outline-none" aria-label="Menü öffnen" aria-expanded="false">
+            <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
         </button>
-        <a href="#so-funktionierts" class="text-2xl text-gray-700 hover:underline" onclick="document.getElementById('mobile-menu').classList.add('hidden')">So funktioniert's</a>
-        <a href="#digital-check" class="text-2xl text-gray-700 hover:underline" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Digital-Check</a>
-        <a href="#kontakt" class="text-2xl text-gray-700 hover:underline" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontakt</a>
+    </nav>
+
+    <!-- Mobile Menu (Dropdown im neuen Farb-Design) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#182025] border-t border-gray-700 shadow-xl">
+        <div class="flex flex-col px-6 py-6 space-y-4 text-center">
+            <a href="index.html#features" class="text-[#bfbfbf] hover:text-white text-lg font-medium">Funktionen</a>
+            <a href="partner.html" class="text-[#bfbfbf] hover:text-white text-lg font-medium">Über mich</a>
+            <a href="mission.html" class="text-[#bfbfbf] hover:text-white text-lg font-medium">Mission</a>
+            <a href="index.html#kontakt" class="bg-primary-green text-white font-bold py-3 px-6 rounded-full text-lg shadow-md mt-4">Erst-Check</a>
+            <button id="close-mobile-menu" class="mt-4 text-gray-500 hover:text-white text-sm">Menü schließen <i class="fas fa-chevron-up ml-1" aria-hidden="true"></i></button>
+        </div>
     </div>
 </header>
