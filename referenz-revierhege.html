@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RevierHege: Referenzprojekt und Produktvalidierung | byte &amp; Handwerk</title>
+    <meta name="description" content="Wie aus einem realen Problem ein iOS-Pilot entstand, mit Nutzern geprüft und nach der Marktvalidierung bewusst nicht kommerziell weitergeführt wurde.">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/referenz-revierhege.html">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "RevierHege: Vom Praxisproblem zur begründeten Produktentscheidung",
+        "description": "Fallstudie über Problemverständnis, MVP-Entwicklung, Praxistest und Marktvalidierung am Beispiel der iOS-App RevierHege.",
+        "author": {
+          "@type": "Person",
+          "name": "Dominik Baki"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "byte & Handwerk",
+          "url": "https://byteundhandwerk.de/"
+        },
+        "mainEntityOfPage": "https://byteundhandwerk.de/referenz-revierhege.html"
+      }
+    </script>
+  </head>
+  <body class="reference-page">
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="byte &amp; Handwerk Startseite">
+        <img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk">
+      </a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="mission.html">Haltung</a>
+        <a href="referenz-revierhege.html" aria-current="page">Referenzprojekt</a>
+        <a href="baeckerei-pilot.html">Bäckerei-Pilot</a>
+        <a href="partner.html">Über mich</a>
+      </nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true">
+      <a href="index.html">Startseite</a>
+      <a href="mission.html">Haltung</a>
+      <a href="referenz-revierhege.html" aria-current="page">Referenzprojekt</a>
+      <a href="baeckerei-pilot.html">Bäckerei-Pilot</a>
+      <a href="partner.html">Über mich</a>
+    </nav>
+
+    <main id="main-content">
+      <section class="subpage-hero reference-hero">
+        <div>
+          <p class="eyebrow">Referenzprojekt · RevierHege</p>
+          <h1>Ein echtes Problem. Ein funktionierender Pilot.<span>Und ein begründetes Nein.</span></h1>
+          <p class="subpage-lead">RevierHege entstand gemeinsam mit einer kleinen Jagdgruppe. Die App wurde gebaut, im Alltag getestet und anschließend über den Pilotbetrieb hinaus am Markt geprüft. Der Prozess endete nicht mit mehr Funktionen, sondern mit einer bewussten Produktentscheidung.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projektweg">Projektweg ansehen</a>
+            <a class="button button-outline" href="#ergebnis">Zum Ergebnis</a>
+          </div>
+          <ul class="trust-list" aria-label="Projektmerkmale">
+            <li>Reales Praxisproblem</li>
+            <li>Native iOS-App</li>
+            <li>Pilotgruppe und TestFlight</li>
+            <li>Marktvalidierung vor Ausbau</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reference-board" aria-label="Projektakte RevierHege">
+          <div class="panel-topline"><span>Projektakte</span><span class="panel-status">Validierung abgeschlossen</span></div>
+          <div class="decision-sheet">
+            <span>Die Ausgangsfrage</span>
+            <h2>Wo ist welche Kirrung – und was wurde zuletzt getan?</h2>
+            <div class="decision-path" aria-label="Verstehen, begrenzen, erproben und entscheiden">
+              <span>Verstehen</span>
+              <span>Begrenzen</span>
+              <span>Erproben</span>
+              <span>Entscheiden</span>
+            </div>
+          </div>
+          <div class="panel-footnote"><span>Kommerzielle Fortführung</span><strong>vorerst nicht geplant</strong></div>
+        </div>
+      </section>
+
+      <section class="pilot-stats" aria-label="Projektüberblick">
+        <div><strong>1</strong><span>Pilotgruppe</span></div>
+        <div><strong>iOS</strong><span>Native Anwendung</span></div>
+        <div><strong>Beta</strong><span>TestFlight-Praxistest</span></div>
+        <div><strong>Nein</strong><span>Als valides Ergebnis</span></div>
+      </section>
+
+      <section class="section section-white" id="ausgangslage">
+        <div class="section-heading">
+          <p class="eyebrow">Die Ausgangslage</p>
+          <h2>Ein konkreter Ablauf war unnötig schwer.</h2>
+          <p>Mehrere Personen betreuten dieselben Kirrungen. Informationen wurden über Telefon, WhatsApp und Erinnerung weitergegeben. Dadurch fehlte gelegentlich eine gemeinsame, aktuelle Sicht auf Standorte, Kontrollen und erledigte Arbeiten.</p>
+        </div>
+        <div class="problem-grid">
+          <article>
+            <span class="card-number">01 · Auslöser</span>
+            <h3>Praxis statt Ideenliste</h3>
+            <p>Der Startpunkt war keine abstrakte Geschäftsidee, sondern die Beschreibung eines wiederkehrenden Ablaufs durch einen späteren Pilotnutzer.</p>
+          </article>
+          <article class="accent-card">
+            <span class="card-number">02 · Produktthese</span>
+            <h3>Eine gemeinsame Sicht</h3>
+            <p>Eine einfache Karte mit Status und Historie sollte Rückfragen reduzieren und den aktuellen Stand für die gesamte Gruppe nachvollziehbar machen.</p>
+          </article>
+          <article>
+            <span class="card-number">03 · Grenze</span>
+            <h3>Nur das Nötige bauen</h3>
+            <p>Der Pilot blieb bewusst auf eine kleine, geschlossene Gruppe und ihren konkreten Arbeitsablauf begrenzt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="projektweg">
+        <div class="process-layout">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">Der Projektweg</p>
+            <h2>Nicht nur gebaut. Schritt für Schritt geprüft.</h2>
+            <p class="text-muted">Neue Funktionen entstanden aus beobachtetem Bedarf. Gleichzeitig wurde immer wieder geprüft, ob das Problem außerhalb der Pilotgruppe relevant genug war.</p>
+          </div>
+          <div class="process-list">
+            <article><span>01</span><h3>Verstehen</h3><p>Gespräche mit der Pilotgruppe machten Ablauf, Rollen, Sprache und entscheidende Informationen sichtbar.</p></article>
+            <article><span>02</span><h3>Begrenzen</h3><p>Aus vielen denkbaren Möglichkeiten wurde ein enger MVP mit Karte, Status, Verlauf und geregeltem Zugang.</p></article>
+            <article><span>03</span><h3>Erproben</h3><p>Die native iOS-App wurde über TestFlight bereitgestellt und anhand konkreter Rückmeldungen aus dem Revieralltag verbessert.</p></article>
+            <article><span>04</span><h3>Entscheiden</h3><p>Gespräche, Forenbeiträge, Wettbewerber und bestehende Ersatzlösungen wurden in die Marktentscheidung einbezogen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-paper">
+        <div class="measurement-card reference-product-card">
+          <div class="field-sheet" aria-label="Kernfunktionen des RevierHege-Piloten">
+            <div><span>Karte</span><strong>Kirrungen gemeinsam überblicken</strong></div>
+            <div><span>Status</span><strong>Voll, leer und fällig erkennen</strong></div>
+            <div><span>Historie</span><strong>Änderungen nachvollziehen</strong></div>
+            <div><span>Zusammenarbeit</span><strong>Informationen direkt teilen</strong></div>
+            <div><span>Zugang</span><strong>Geschlossene Reviergruppe</strong></div>
+          </div>
+          <div class="section-heading">
+            <p class="eyebrow">Das entstandene Produkt</p>
+            <h2>Mehr als ein Prototyp. Weniger als ein Selbstzweck.</h2>
+            <p>RevierHege wurde als nutzbare native iOS-App umgesetzt. Echtzeitdaten, Rollen, Freigaben und ein nachvollziehbares Logbuch machten den Pilot im Alltag einsetzbar.</p>
+            <p>Der technische Fortschritt blieb trotzdem der Produktfrage untergeordnet: Rechtfertigt der bestätigte Nutzen in einer Gruppe eine weitere Investition für einen größeren Markt?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="ergebnis">
+        <div class="criteria-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Die Marktvalidierung</p>
+            <h2>Der Pilot bestätigte Nutzen. Nicht automatisch einen Markt.</h2>
+            <p>Das positive Feedback der Pilotgruppe war wichtig, aber kein ausreichender Beleg für eine tragfähige Produktchance. Deshalb wurde die ursprüngliche These bewusst außerhalb dieser Gruppe geprüft.</p>
+          </div>
+          <ul class="criteria-list" aria-label="Erkenntnisse aus der Marktvalidierung">
+            <li><span>✓</span>Die Pilotgruppe hatte einen realen und wiederkehrenden Anwendungsfall.</li>
+            <li><span>✓</span>Rückmeldungen aus der Praxis verbesserten Sprache und Funktionsumfang.</li>
+            <li><span>–</span>Viele andere Reviere arbeiteten mit festen Zuständigkeiten oder WhatsApp ausreichend gut.</li>
+            <li><span>–</span>Mehrere etablierte Jagd-Apps deckten ähnliche oder größere Funktionsbereiche ab.</li>
+            <li><span>→</span>Die Produktthese bestätigte sich nicht breit genug für die geplante kommerzielle Weiterentwicklung.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="principle-quote">
+          <blockquote>„Ein begründetes Nein schützt Zeit für das nächste echte Problem.“</blockquote>
+          <div>
+            <p class="eyebrow eyebrow-light">Das Ergebnis</p>
+            <p>RevierHege ist kein gescheitertes Softwareprojekt. Die App erfüllt ihren Pilotzweck und belegt die technische Umsetzung. Die Marktvalidierung lieferte jedoch keinen ausreichenden Grund für Android-Version, Vermarktung und dauerhaften Produktbetrieb.</p>
+            <p>Deshalb ist die kommerzielle Weiterentwicklung vorerst nicht geplant. Diese Entscheidung ist Teil der Referenz: Erkenntnisse dürfen wichtiger sein als bereits investierter Aufwand.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-deep">
+        <div class="section-heading">
+          <p class="eyebrow">Übertragbare Methode</p>
+          <h2>Die Branche kann sich ändern. Die Methode nicht.</h2>
+          <p>RevierHege ist keine Vorlage für Bäckereisoftware. Übertragbar ist der Weg von einer beobachteten Entscheidung bis zu einem belastbaren nächsten Schritt.</p>
+        </div>
+        <div class="steps-grid">
+          <article><span>01</span><h3>Entscheidung klären</h3><p>Welcher konkrete Ablauf oder welche Entscheidung soll für die Beteiligten besser werden?</p></article>
+          <article><span>02</span><h3>Annahmen prüfen</h3><p>Wie häufig tritt das Problem auf, wie wird es heute gelöst und wer empfindet es wirklich als relevant?</p></article>
+          <article><span>03</span><h3>Klein erproben</h3><p>Ein begrenzter Pilot schafft echte Beobachtungen, ohne früh eine große Lösung vorauszusetzen.</p></article>
+          <article><span>04</span><h3>Ehrlich entscheiden</h3><p>Ausbauen, verändern oder beenden: Das Ergebnis folgt den Erkenntnissen, nicht dem Wunschbild.</p></article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Von der Referenz zum aktuellen Pilot</p>
+        <h2>Welche Annahme soll Ihr Pilot überprüfbar machen?</h2>
+        <p>Beim aktuellen Bäckerei-Piloten wird dieselbe Methode auf die tägliche Mengenplanung übertragen: klein beginnen, Wirkung messen und erst danach über Software entscheiden.</p>
+        <a class="button button-light" href="baeckerei-pilot.html">Bäckerei-Pilot ansehen</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="referenz-revierhege.html">Referenzprojekt</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html">Über mich</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
+</html>

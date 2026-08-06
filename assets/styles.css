@@ -640,6 +640,61 @@ p {
   box-shadow: var(--shadow);
 }
 
+.reference-teaser {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: clamp(42px, 7vw, 96px);
+  align-items: stretch;
+  padding: clamp(34px, 6vw, 76px);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.reference-teaser h2 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(2.35rem, 4.6vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.reference-teaser p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 25px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.reference-teaser .button {
+  margin-top: 30px;
+}
+
+.reference-teaser-statement {
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(28px, 5vw, 58px);
+  background: var(--green);
+  color: var(--white);
+}
+
+.reference-teaser-statement span {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reference-teaser-statement strong {
+  max-width: 360px;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
 .focus-copy .button {
   margin-top: 32px;
 }
@@ -794,6 +849,37 @@ p {
   align-items: center;
   padding: clamp(78px, 9vw, 132px) clamp(24px, 7vw, 120px);
   background: linear-gradient(135deg, var(--paper), var(--paper-deep));
+}
+
+.reference-hero {
+  background:
+    radial-gradient(circle at 86% 12%, rgba(69, 101, 82, 0.2), transparent 26%),
+    linear-gradient(135deg, var(--paper), #e2e7dd);
+}
+
+.reference-board {
+  transform: rotate(-1deg);
+}
+
+.reference-board .decision-sheet > span {
+  color: var(--green);
+}
+
+.reference-board .decision-path span::before {
+  background: var(--green);
+}
+
+.reference-board .panel-footnote strong {
+  color: #b9d8c3;
+}
+
+.reference-product-card {
+  background: var(--white);
+}
+
+.reference-product-card .field-sheet {
+  align-self: start;
+  box-shadow: 12px 14px 0 rgba(69, 101, 82, 0.24);
 }
 
 .pilot-board {
@@ -1186,7 +1272,8 @@ details p {
 
   .process-layout,
   .focus-card,
-  .measurement-card {
+  .measurement-card,
+  .reference-teaser {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1312,6 +1399,8 @@ details p {
 
   .pilot-stats div {
     min-height: 92px;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .process-list article {
