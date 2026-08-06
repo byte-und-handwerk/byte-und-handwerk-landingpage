@@ -1,97 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung | byte & Handwerk</title>
-
-    <!-- Favicon / Web Icon (Responsive & Modern) -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="byteundhandwerk.de" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#182025">
-    
-    <!-- USERCENTRICS COOKIE TOOL -->
-    <link rel="dns-prefetch" href="//app.usercentrics.eu" />
-    <link rel="dns-prefetch" href="//api.usercentrics.eu" />
-    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
-    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datenschutzerklärung | byte &amp; Handwerk</title>
+    <meta name="theme-color" content="#172126">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://privacy-proxy.usercentrics.eu">
     <script id="usercentrics-cmp" data-eu-mode="true" data-settings-id="vC1A9YPEa2XgYq" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js" async></script>
-    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
-    <!-- ENDE USERCENTRICS -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-green': '#15803d',
-                        'secondary-blue': '#1d4ed8',
-                        'accent-yellow': '#FBBF24',
-                        'neutral-lightgray': '#F3F4F6',
-                    },
-                    fontFamily: {
-                        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-                    }
-                },
-            },
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" defer>
-    <style>
-        body { color: #111827; }
-        :focus-visible { outline: 3px solid #FBBF24; outline-offset: 4px; border-radius: 2px; }
-    </style>
-</head>
-<body class="bg-neutral-lightgray flex flex-col min-h-screen">
-
-    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex items-center">
-            <a href="index.html" class="flex items-center text-secondary-blue hover:text-primary-green hover:underline underline-offset-4 font-semibold transition duration-300">
-                <i class="fas fa-arrow-left mr-2" aria-hidden="true"></i> Zurück zur Startseite
-            </a>
-        </nav>
+    <script src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html">Über mich</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
     </header>
-
-    <main id="main-content" role="main" class="flex-grow container mx-auto px-6 pt-28 pb-16 max-w-4xl">
-        <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-200">
-            <h1 class="text-3xl md:text-4xl font-bold mb-8 text-gray-900 border-b pb-4">Datenschutzerklärung</h1>
-            
-            <!-- IT-Recht Kanzlei iFrame Embed -->
-            <div class="w-full">
-                <iframe 
-                    src="https://itrk.legal/1xK3.8V.16RT-iframe.html" 
-                    class="w-full min-h-[800px] border-none" 
-                    title="Datenschutzerklärung der IT-Recht Kanzlei"
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html">Über mich</a></nav>
+    <main class="legal-main" id="main-content">
+      <div class="legal-card">
+        <h1>Datenschutzerklärung</h1>
+        <iframe src="https://itrk.legal/1xK3.8V.16RT-iframe.html" title="Datenschutzerklärung der IT-Recht Kanzlei"></iframe>
+      </div>
     </main>
-
-    <!-- Modulares Laden: Footer -->
-    <div data-include="components/footer.html"></div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const includes = document.querySelectorAll('[data-include]');
-            Promise.all(Array.from(includes).map(el => {
-                const file = el.getAttribute('data-include');
-                return fetch(file).then(res => res.text()).then(data => el.outerHTML = data);
-            })).then(() => {
-                if (typeof tailwind !== 'undefined') {
-                    setTimeout(() => {
-                        document.body.style.display = 'none';
-                        document.body.offsetHeight;
-                        document.body.style.display = '';
-                    }, 50);
-                }
-            });
-        });
-    </script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="index.html">Startseite</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
 </html>

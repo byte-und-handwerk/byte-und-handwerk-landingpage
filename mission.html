@@ -1,94 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Mission | byte & Handwerk</title>
-
-    <!-- Favicon / Web Icon (Responsive & Modern) -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="byteundhandwerk.de" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#182025">
-    
-    <!-- USERCENTRICS COOKIE TOOL -->
-    <link rel="dns-prefetch" href="//app.usercentrics.eu" />
-    <link rel="dns-prefetch" href="//api.usercentrics.eu" />
-    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
-    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
-    <script id="usercentrics-cmp" data-eu-mode="true" data-settings-id="vC1A9YPEa2XgYq" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js" async></script>
-    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
-    <!-- ENDE USERCENTRICS -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-green': '#15803d',
-                        'secondary-blue': '#1d4ed8',
-                        'accent-yellow': '#FBBF24',
-                        'neutral-lightgray': '#F3F4F6',
-                    },
-                    fontFamily: {
-                        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-                    }
-                },
-            },
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" defer>
-    <style>
-        body { color: #111827; }
-        :focus-visible { outline: 3px solid #FBBF24; outline-offset: 4px; border-radius: 2px; }
-    </style>
-</head>
-<body class="bg-neutral-lightgray flex flex-col min-h-screen">
-
-    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex items-center">
-            <a href="index.html" class="flex items-center text-secondary-blue hover:text-primary-green hover:underline underline-offset-4 font-semibold transition duration-300">
-                <i class="fas fa-arrow-left mr-2" aria-hidden="true"></i> Zurück zur Startseite
-            </a>
-        </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haltung und Arbeitsweise | byte &amp; Handwerk</title>
+    <meta name="description" content="Die Haltung von byte &amp; Handwerk: Menschen vor Modellen, Verstehen vor Lösungen und Wirkung vor Aktivität.">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/mission.html">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="mission.html" aria-current="page">Haltung</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html">Über mich</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
     </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="index.html">Startseite</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html">Über mich</a></nav>
 
-    <main id="main-content" role="main" class="flex-grow pt-24">
-        <section id="mission" aria-labelledby="mission-title" class="py-16 md:py-24 bg-neutral-lightgray">
-            <div class="container mx-auto px-6 text-center">
-                <h1 id="mission-title" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Aus der Region. Für die Region.</h1>
-                <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">Ich bin hier verwurzelt. Mir geht es nicht nur darum, richtig gute Software für das Handwerk zu bauen – ich möchte meiner Heimat auch ganz konkret etwas zurückgeben.</p>
-                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Meine Frau arbeitet in einer Pflegeeinrichtung und berichtet oft von der täglichen Einsamkeit vieler Bewohner. Das lässt mich nicht los. Deshalb entwickle ich aktuell <strong>MomentenMacher</strong> – ein soziales Herzensprojekt, das echte Begegnungen zwischen Jung und Alt ermöglicht. Wenn wir zusammenarbeiten, unterstützen Sie indirekt auch diese Plattform. Wir machen also Ihren Betrieb zukunftssicher und stärken gleichzeitig das menschliche Miteinander hier vor Ort.</p>
-                 <div class="mt-6 italic font-semibold text-primary-green text-xl p-4 bg-white rounded-lg inline-block shadow-md border border-gray-200">
-                    <span class="italic"> „Weil Handwerk un Häämat z'ammeghere, gell.“</span>
-                </div>
-            </div>
-        </section>
+    <main id="main-content">
+      <section class="subpage-hero">
+        <div>
+          <p class="eyebrow">Haltung vor Produkt</p>
+          <h1>Wir entwickeln nicht zuerst Software.<span>Wir verstehen zuerst den Arbeitsalltag.</span></h1>
+          <p class="subpage-lead">Produkte und Technologien dürfen sich verändern. Bleiben soll die Art, wie wir Menschen begegnen, Fragen stellen, Entscheidungen treffen und Verantwortung übernehmen.</p>
+          <div class="hero-actions"><a class="button" href="#prinzipien">Prinzipien ansehen</a><a class="button button-outline" href="index.html#arbeitsweise">Arbeitsweise</a></div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-topline"><span>Entscheidungsfilter</span><span class="panel-status">Aktiv</span></div>
+          <div class="decision-sheet"><span>Vor jeder wichtigen Entscheidung</span><h2>Was wird für die Betroffenen konkret besser?</h2><div class="decision-path"><span>Beobachten</span><span>Verstehen</span><span>Prüfen</span><span>Lernen</span></div></div>
+          <div class="panel-footnote"><span>Modelle strukturieren</span><strong>Menschen entscheiden</strong></div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="prinzipien">
+        <div class="section-heading"><p class="eyebrow">Prinzipien als Entscheidungshilfe</p><h2>Nicht für die Wand. Für schwierige Situationen.</h2><p>Prinzipien werden dann relevant, wenn es keine offensichtliche Antwort gibt und wirtschaftliche, technische und menschliche Perspektiven miteinander abgewogen werden müssen.</p></div>
+        <div class="principles-grid">
+          <article><span class="card-number">01</span><h3>Menschen vor Modellen</h3><p>Rollen und Modelle dürfen Beobachtungen strukturieren. Sie ersetzen nicht den ersten offenen Blick auf einen Menschen.</p></article>
+          <article><span class="card-number">02</span><h3>Fragen vor Antworten</h3><p>Eine gute Frage darf der eigenen bevorzugten Lösung widersprechen. Erkenntnis ist wichtiger als Bestätigung.</p></article>
+          <article><span class="card-number">03</span><h3>Ursachen vor Symptomen</h3><p>Das sichtbarste Problem ist nicht automatisch seine Ursache. Wir untersuchen, was es dauerhaft aufrechterhält.</p></article>
+          <article><span class="card-number">04</span><h3>Einfachheit vor Komplexität</h3><p>Komplexität benötigt eine Begründung. Die kleinste wirksame Lösung hat Vorrang.</p></article>
+          <article><span class="card-number">05</span><h3>Widerspruch vor Harmonie</h3><p>Argumente werden nach ihrem Inhalt bewertet. Begründete Kritik gehört zu einer tragfähigen Entscheidung.</p></article>
+          <article><span class="card-number">06</span><h3>Lernen vor Rechthaben</h3><p>Neue Erkenntnisse dürfen frühere Entscheidungen verändern. Investierter Aufwand macht eine widerlegte Idee nicht richtig.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="process-layout">
+          <div class="section-heading"><p class="eyebrow eyebrow-light">Unser Versprechen</p><h2>Keine perfekte Lösung versprechen. Ehrlich begründen.</h2></div>
+          <div class="process-list">
+            <article><span>01</span><h3>Offen fragen</h3><p>Fragen dienen dem Verstehen, nicht der Manipulation oder der schnellen Einordnung.</p></article>
+            <article><span>02</span><h3>Unsicherheit zeigen</h3><p>Wir unterscheiden zwischen bekannt, angenommen, wahrscheinlich und ungeklärt.</p></article>
+            <article><span>03</span><h3>Grenzen benennen</h3><p>Wir nehmen keine Aufgabe an, deren Qualität oder Verantwortung wir nicht vertreten können.</p></article>
+            <article><span>04</span><h3>Wirkung prüfen</h3><p>Erfolg bedeutet, dass Arbeit einfacher, verständlicher oder zuverlässiger wird.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta"><p class="eyebrow eyebrow-light">Vom Prinzip zur Praxis</p><h2>Ein Pilot macht Annahmen überprüfbar.</h2><p>Der aktuelle Bäckerei-Pilot setzt diese Haltung in einem kleinen, messbaren und zeitlich begrenzten Vorhaben um.</p><a class="button button-light" href="baeckerei-pilot.html">Vier-Wochen-Pilot ansehen</a></section>
     </main>
 
-    <!-- Modulares Laden: Footer -->
-    <div data-include="components/footer.html"></div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const includes = document.querySelectorAll('[data-include]');
-            Promise.all(Array.from(includes).map(el => {
-                const file = el.getAttribute('data-include');
-                return fetch(file).then(res => res.text()).then(data => el.outerHTML = data);
-            })).then(() => {
-                if (typeof tailwind !== 'undefined') {
-                    setTimeout(() => {
-                        document.body.style.display = 'none';
-                        document.body.offsetHeight;
-                        document.body.style.display = '';
-                    }, 50);
-                }
-            });
-        });
-    </script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="index.html">Startseite</a><a href="partner.html">Über mich</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
 </html>

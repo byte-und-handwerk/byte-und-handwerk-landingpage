@@ -1,108 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich | byte & Handwerk</title>
-
-    <!-- Favicon / Web Icon (Responsive & Modern) -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="byteundhandwerk.de" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#182025">
-    
-    <!-- USERCENTRICS COOKIE TOOL -->
-    <link rel="dns-prefetch" href="//app.usercentrics.eu" />
-    <link rel="dns-prefetch" href="//api.usercentrics.eu" />
-    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
-    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
-    <script id="usercentrics-cmp" data-eu-mode="true" data-settings-id="vC1A9YPEa2XgYq" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js" async></script>
-    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
-    <!-- ENDE USERCENTRICS -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-green': '#15803d',
-                        'secondary-blue': '#1d4ed8',
-                        'accent-yellow': '#FBBF24',
-                        'neutral-lightgray': '#F3F4F6',
-                    },
-                    fontFamily: {
-                        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-                    }
-                },
-            },
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" defer>
-    <style>
-        body { color: #111827; }
-        :focus-visible { outline: 3px solid #FBBF24; outline-offset: 4px; border-radius: 2px; }
-    </style>
-</head>
-<body class="bg-neutral-lightgray flex flex-col min-h-screen">
-
-    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex items-center">
-            <a href="index.html" class="flex items-center text-secondary-blue hover:text-primary-green hover:underline underline-offset-4 font-semibold transition duration-300">
-                <i class="fas fa-arrow-left mr-2" aria-hidden="true"></i> Zurück zur Startseite
-            </a>
-        </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Über Dominik Baki | byte &amp; Handwerk</title>
+    <meta name="description" content="Dominik Baki verbindet Erfahrung aus Bäckerhandwerk, Biotechnologie, Vertrieb und App-Entwicklung.">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/partner.html">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html#haltung">Haltung</a><a href="index.html#arbeitsweise">Arbeitsweise</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="partner.html" aria-current="page">Über mich</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
     </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="index.html">Unternehmensseite</a><a href="mission.html">Haltung</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a></nav>
 
-    <main id="main-content" role="main" class="flex-grow pt-24">
-        <section id="ihr-lotse" aria-labelledby="partner-title" class="py-16 md:py-24 bg-neutral-lightgray">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto">
-                    <h1 id="partner-title" class="text-4xl font-bold mb-4 text-gray-800">Ihr Partner mit Biss: Handwerk trifft Hightech.</h1>
-                    <p class="text-xl text-gray-700 mb-10 font-medium">Kein Berater-Blabla. Keine Experimente auf Ihre Kosten. Nur Lösungen, die im echten Alltag funktionieren.</p>
-                </div>
-                <div class="flex flex-wrap md:flex-nowrap items-center gap-12 max-w-6xl mx-auto">
-                    <div class="w-full md:w-1/2 text-lg leading-relaxed text-gray-700">
-                        <p class="mb-6">Ich komme selbst aus der Backstube. Ich habe klassisch Bäcker gelernt und weiß ganz genau, wie sich der harte Alltag und eine 60-Stunden-Woche im Betrieb anfühlen. In der Biotechnologie habe ich danach gelernt, was kompromisslose Präzision bedeutet. Meine anschließende Zeit im Vertrieb war dann die letzte fehlende Zutat: Dort habe ich gelernt, wie man Menschen wirklich erreicht, aber auch ganz klar für mich erkannt, dass ich keine Lust habe, Dinge künstlich überteuert zu verkaufen. Ich wollte etwas Eigenes aufbauen. Etwas Ehrliches, mit dem ich mich zu 100 % identifizieren kann und das handfeste Probleme löst. Aus genau diesem Antrieb heraus habe ich den Quereinstieg in die App-Entwicklung gemacht.</p>
-                        <p class="mb-6 font-bold text-gray-900">Heute bringe ich bei <span class="text-primary-green">byte & Handwerk</span> all diese praktischen Erfahrungen zusammen. Sie bekommen von mir keine hippen Agentur-Ideen, die im Stress an der Ladenkasse sofort zusammenbrechen. Sie bekommen stabile, durchdachte digitale Lösungen, die Ihnen wirklich den Rücken freihalten.</p>
-                        <blockquote class="bg-white p-4 rounded-lg border-l-4 border-primary-green mt-6 italic font-semibold text-xl text-gray-800">
-                            „Isch babbel dir nix vor. Isch mach's äfach. Fer disch un doi G'schäft, alla hopp!“
-                        </blockquote>
-                    </div>
-                    <div class="w-full md:w-1/2">
-                         <img src="Dominik Baki.png"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x600/1d4ed8/FFFFFF?text=Dominik+Baki'"
-                             alt="Dominik Baki - Gründer byte & Handwerk" 
-                             class="rounded-xl shadow-lg w-full h-auto object-cover" 
-                             loading="lazy">
-                    </div>
-                </div>
+    <main id="main-content">
+      <section class="founder-hero">
+        <div>
+          <p class="eyebrow">Dominik Baki</p>
+          <h1>Erfahrung im Handwerk trifft Software.</h1>
+          <p class="hero-lead">Ich komme nicht mit einer fertigen Antwort in den Betrieb. Ich komme mit Fragen, technischer Erfahrung und dem Anspruch, den tatsächlichen Arbeitsalltag zu verstehen.</p>
+          <div class="hero-actions"><a class="button" href="baeckerei-pilot.html">Aktuellen Pilot ansehen</a><a class="button button-outline" href="mailto:dominik.baki@byteundhandwerk.de">Direkt schreiben</a></div>
+        </div>
+        <div class="portrait"><img src="Dominik Baki.png" alt="Dominik Baki, Gründer von byte &amp; Handwerk"></div>
+      </section>
+
+      <section class="section section-white">
+        <div class="story-grid">
+          <div><p class="eyebrow">Der Weg</p><h2>Kein geradliniger Lebenslauf. Eine klare Haltung.</h2></div>
+          <div class="story-copy">
+            <p>Meine berufliche Grundlage ist das Bäckerhandwerk. Dort habe ich erlebt, wie stark Erfahrung, klare Übergaben und Entscheidungen unter Zeitdruck den Alltag prägen.</p>
+            <p>Später arbeitete ich viele Jahre in der Biotechnologie. Präzision, nachvollziehbare Abläufe und der verantwortungsvolle Umgang mit Daten wurden dort zu einem festen Teil meiner Arbeitsweise.</p>
+            <p>Im Vertrieb lernte ich die Wirkung guter Fragen – und ebenso deutlich die Grenze zwischen ehrlicher Beratung und Überredung. Heute nutze ich diese Erfahrung, um Bedarf zu verstehen, statt eine vorbereitete Lösung zu rechtfertigen.</p>
+            <p>Mit der App-Entwicklung kam das Werkzeug hinzu, mit dem sich Prozesse sichtbar machen und digitale Lösungen umsetzen lassen. Technologie ist für mich dabei nie der Ausgangspunkt, sondern eine mögliche Antwort.</p>
+            <div class="values-list">
+              <div>Menschen ernst nehmen</div><div>Ursachen vor Symptomen</div><div>Einfachheit aktiv suchen</div><div>Entscheidungen begründen</div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="principle-quote">
+          <blockquote>„Erfahrung begründet Fragen. Sie ersetzt keine Antworten der Betroffenen.“</blockquote>
+          <div><p class="eyebrow eyebrow-light">Zusammenarbeit</p><p>Die Menschen, die täglich mit einem Problem leben, sind keine bloße Datenquelle. Sie sind Beteiligte. Deshalb entstehen tragfähige Lösungen gemeinsam mit Produktion, Verkauf und Verantwortungsträgern.</p><p>Kritik ist dabei kein Störfaktor. Sie gehört zu einer Entscheidung, die später im Betrieb funktionieren soll.</p></div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Kennenlernen</p>
+        <h2>Ein erstes Gespräch darf auch mit einem Nein enden.</h2>
+        <p>Wir klären gemeinsam, ob ein bestätigter Bedarf, geeignete Voraussetzungen und ein sinnvoll begrenzter nächster Schritt vorhanden sind.</p>
+        <a class="button button-light" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">20-Minuten-Pilot-Check buchen</a>
+      </section>
     </main>
 
-    <!-- Modulares Laden: Footer -->
-    <div data-include="components/footer.html"></div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const includes = document.querySelectorAll('[data-include]');
-            Promise.all(Array.from(includes).map(el => {
-                const file = el.getAttribute('data-include');
-                return fetch(file).then(res => res.text()).then(data => el.outerHTML = data);
-            })).then(() => {
-                if (typeof tailwind !== 'undefined') {
-                    setTimeout(() => {
-                        document.body.style.display = 'none';
-                        document.body.offsetHeight;
-                        document.body.style.display = '';
-                    }, 50);
-                }
-            });
-        });
-    </script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
 </html>
