@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://byteundhandwerk.de/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/mission.html</loc>
@@ -18,7 +18,11 @@
   </url>
   <url>
     <loc>https://byteundhandwerk.de/blog.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/blog-digitalisierung-handwerk.html</loc>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/blog-begruendetes-nein.html</loc>
