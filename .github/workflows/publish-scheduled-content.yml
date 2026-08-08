@@ -8,6 +8,10 @@ on:
         required: true
         type: boolean
         default: true
+      test_date:
+        description: Optional publication date for a dry run in YYYY-MM-DD format
+        required: false
+        type: string
   schedule:
     - cron: "17 8 * * *"
       timezone: Europe/Berlin
@@ -34,7 +38,19 @@ jobs:
             const requiredMilestone = "Website-Beiträge 2026";
             const scheduleLabel = "scheduled-publish";
             const publicationLabelPattern = /^publish-(\d{4}-\d{2}-\d{2})$/;
-            const dryRun = context.eventName === "workflow_dispatch" && core.getInput("dry_run") !== "false";
+            const workflowInputs = context.payload.inputs || {};
+            const dryRun = context.eventName === "workflow_dispatch" && workflowInputs.dry_run !== "false";
+            const testDate = context.eventName === "workflow_dispatch" ? (workflowInputs.test_date || "").trim() : "";
+
+            if (testDate && !dryRun) {
+              core.setFailed("Ein Testdatum darf nur bei aktiviertem Dry Run verwendet werden.");
+              return;
+            }
+
+            if (testDate && !/^\d{4}-\d{2}-\d{2}$/.test(testDate)) {
+              core.setFailed("Das Testdatum muss dem Format YYYY-MM-DD entsprechen.");
+              return;
+            }
 
             const dateParts = new Intl.DateTimeFormat("en-GB", {
               timeZone: "Europe/Berlin",
@@ -43,7 +59,7 @@ jobs:
               day: "2-digit"
             }).formatToParts(new Date());
             const datePart = type => dateParts.find(part => part.type === type).value;
-            const today = `${datePart("year")}-${datePart("month")}-${datePart("day")}`;
+            const today = testDate || `${datePart("year")}-${datePart("month")}-${datePart("day")}`;
 
             const pullRequests = await github.paginate(github.rest.pulls.list, {
               owner,
