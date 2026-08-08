@@ -1,0 +1,163 @@
+name: Publish scheduled website content
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Check the next due pull request without merging it
+        required: true
+        type: boolean
+        default: true
+      test_date:
+        description: Optional publication date for a dry run in YYYY-MM-DD format
+        required: false
+        type: string
+  schedule:
+    - cron: "17 8 * * *"
+      timezone: Europe/Berlin
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: scheduled-content-publishing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Merge the next due content pull request
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const requiredMilestone = "Website-Beiträge 2026";
+            const scheduleLabel = "scheduled-publish";
+            const publicationLabelPattern = /^publish-(\d{4}-\d{2}-\d{2})$/;
+            const workflowInputs = context.payload.inputs || {};
+            const dryRun = context.eventName === "workflow_dispatch" && workflowInputs.dry_run !== "false";
+            const testDate = context.eventName === "workflow_dispatch" ? (workflowInputs.test_date || "").trim() : "";
+
+            if (testDate && !dryRun) {
+              core.setFailed("Ein Testdatum darf nur bei aktiviertem Dry Run verwendet werden.");
+              return;
+            }
+
+            if (testDate && !/^\d{4}-\d{2}-\d{2}$/.test(testDate)) {
+              core.setFailed("Das Testdatum muss dem Format YYYY-MM-DD entsprechen.");
+              return;
+            }
+
+            const dateParts = new Intl.DateTimeFormat("en-GB", {
+              timeZone: "Europe/Berlin",
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit"
+            }).formatToParts(new Date());
+            const datePart = type => dateParts.find(part => part.type === type).value;
+            const today = testDate || `${datePart("year")}-${datePart("month")}-${datePart("day")}`;
+
+            const pullRequests = await github.paginate(github.rest.pulls.list, {
+              owner,
+              repo,
+              state: "open",
+              base: "main",
+              per_page: 100
+            });
+
+            const scheduledPullRequests = pullRequests.flatMap(pullRequest => {
+              const labelNames = pullRequest.labels.map(label => label.name);
+              if (!labelNames.includes(scheduleLabel)) return [];
+              if (pullRequest.milestone?.title !== requiredMilestone) return [];
+
+              const publicationLabels = labelNames
+                .map(label => label.match(publicationLabelPattern))
+                .filter(Boolean);
+
+              if (publicationLabels.length !== 1) {
+                core.setFailed(`PR #${pullRequest.number} benötigt genau ein Label im Format publish-YYYY-MM-DD.`);
+                return [];
+              }
+
+              return [{
+                pullRequest,
+                publicationDate: publicationLabels[0][1]
+              }];
+            }).sort((left, right) =>
+              left.publicationDate.localeCompare(right.publicationDate) ||
+              left.pullRequest.number - right.pullRequest.number
+            );
+
+            if (scheduledPullRequests.some(item => item.publicationDate < today)) {
+              core.setFailed("Mindestens ein früher fälliger Veröffentlichungs-PR ist noch offen.");
+              return;
+            }
+
+            const dueItem = scheduledPullRequests.find(item => item.publicationDate === today);
+            if (!dueItem) {
+              core.notice(`Für ${today} ist kein Veröffentlichungs-PR fällig.`);
+              return;
+            }
+
+            const pullRequest = dueItem.pullRequest;
+            if (pullRequest.draft) {
+              core.setFailed(`PR #${pullRequest.number} ist noch als Entwurf markiert.`);
+              return;
+            }
+
+            if (pullRequest.head.repo?.full_name !== `${owner}/${repo}`) {
+              core.setFailed(`PR #${pullRequest.number} stammt nicht aus diesem Repository.`);
+              return;
+            }
+
+            let currentPullRequest = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: pullRequest.number
+            });
+
+            if (currentPullRequest.data.mergeable === null) {
+              await new Promise(resolve => setTimeout(resolve, 5000));
+              currentPullRequest = await github.rest.pulls.get({
+                owner,
+                repo,
+                pull_number: pullRequest.number
+              });
+            }
+
+            if (currentPullRequest.data.mergeable !== true) {
+              core.setFailed(`PR #${pullRequest.number} ist nicht konfliktfrei mergebar.`);
+              return;
+            }
+
+            if (dryRun) {
+              core.notice(`Dry Run erfolgreich: PR #${pullRequest.number} wäre heute zur Veröffentlichung bereit.`);
+              return;
+            }
+
+            const mergeResult = await github.rest.pulls.merge({
+              owner,
+              repo,
+              pull_number: pullRequest.number,
+              merge_method: "merge",
+              commit_title: `Publish: ${pullRequest.title}`
+            });
+
+            if (!mergeResult.data.merged) {
+              core.setFailed(mergeResult.data.message || `PR #${pullRequest.number} konnte nicht gemergt werden.`);
+              return;
+            }
+
+            await github.rest.actions.createWorkflowDispatch({
+              owner,
+              repo,
+              workflow_id: "deploy-pages.yml",
+              ref: "main"
+            });
+
+            core.notice(`PR #${pullRequest.number} wurde für ${today} gemergt und das Pages-Deployment wurde angefordert.`);

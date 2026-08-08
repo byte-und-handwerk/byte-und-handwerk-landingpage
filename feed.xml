@@ -5,8 +5,16 @@
     <link>https://byteundhandwerk.de/blog.html</link>
     <description>Praxisnahe Beiträge über Produktvalidierung, digitale Piloten und technische Verantwortung.</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 06 Aug 2026 17:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 18:00:00 +0200</lastBuildDate>
     <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Produktionsplanung für Bäckereien: Was Software wirklich leisten muss</title>
+      <link>https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html</guid>
+      <pubDate>Sat, 08 Aug 2026 18:00:00 +0200</pubDate>
+      <category>Produktionsplanung</category>
+      <description>Wie Software die Produktionsplanung einer Bäckerei mit einer geeigneten Datenbasis, erklärbaren Mengenvorschlägen und klarer Erfolgsmessung unterstützen kann.</description>
+    </item>
     <item>
       <title>Warum ein begründetes Nein ein gutes Projektergebnis sein kann</title>
       <link>https://byteundhandwerk.de/blog-begruendetes-nein.html</link>

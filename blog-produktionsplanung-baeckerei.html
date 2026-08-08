@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Produktionsplanung für Bäckereien mit Software | byte &amp; Handwerk</title>
+    <meta name="description" content="Wie Software die Produktionsplanung einer Bäckerei unterstützen kann: Datenbasis, Ausverkäufe, Retouren, erklärbare Vorschläge und ein sinnvoller Pilot.">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="byte &amp; Handwerk">
+    <meta property="og:title" content="Produktionsplanung für Bäckereien: Was Software wirklich leisten muss">
+    <meta property="og:description" content="Verkaufsdaten allein reichen nicht. Entscheidend ist, ob Software die tatsächliche Verkaufssituation nachvollziehbar abbildet.">
+    <meta property="og:url" content="https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html">
+    <meta property="og:image" content="https://byteundhandwerk.de/assets/blog-produktionsplanung-baeckerei.png">
+    <meta property="og:image:width" content="720">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:alt" content="Leerer Backzettel mit der Frage: Wie viel braucht morgen wirklich?">
+    <meta property="article:author" content="Dominik Baki">
+    <meta property="article:published_time" content="2026-08-08">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="byte &amp; Handwerk Praxiswissen" href="feed.xml">
+    <link rel="stylesheet" href="assets/styles.css?v=20260808-1">
+    <script src="assets/site.js?v=20260806-2" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Produktionsplanung für Bäckereien: Was Software wirklich leisten muss",
+            "description": "Wie Software die Produktionsplanung einer Bäckerei mit einer geeigneten Datenbasis, erklärbaren Mengenvorschlägen und klarer Erfolgsmessung unterstützen kann.",
+            "datePublished": "2026-08-08",
+            "dateModified": "2026-08-08",
+            "image": "https://byteundhandwerk.de/assets/blog-produktionsplanung-baeckerei.png",
+            "author": {
+              "@type": "Person",
+              "name": "Dominik Baki",
+              "url": "https://byteundhandwerk.de/team/dominik-baki/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "byte & Handwerk",
+              "url": "https://byteundhandwerk.de/"
+            },
+            "mainEntityOfPage": "https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html",
+            "about": ["Produktionsplanung", "Bäckereisoftware", "Mengenplanung", "Retouren", "Ausverkäufe"]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Welche Daten braucht eine Bäckerei für eine bessere Produktionsplanung?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Für einen ersten Test werden vor allem Datum, Filiale, Artikel, tatsächlich verfügbare Menge, verkaufte Menge, Retouren oder Abschriften und der Ausverkaufsstatus benötigt. Aktionen und besondere Verkaufstage helfen bei der Einordnung."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Reicht für den Anfang eine Tabelle?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja. Eine sauber aufgebaute Tabelle kann für einen begrenzten Pilot ausreichen. Software wird sinnvoll, wenn der bestätigte Ablauf regelmäßig wiederholt, über mehrere Rollen genutzt oder durch manuelle Übertragung unnötig fehleranfällig wird."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Braucht die Produktionsplanung sofort künstliche Intelligenz?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein. Zuerst müssen Entscheidung, Datenqualität und Erfolgsmessung stimmen. Erst danach lässt sich beurteilen, welche Prognosemethode für den konkreten Betrieb angemessen ist."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wie lässt sich eine Produktionsplanung sinnvoll testen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ein Pilot kann auf eine Filiale und ein begrenztes Sortiment beschränkt werden. Baseline und Pilotphase werden mit denselben Kennzahlen für Retouren, Ausverkäufe und wirtschaftliche Wirkung verglichen."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="referenz-revierhege.html">Referenzprojekt</a><a href="blog.html" aria-current="page">Blog</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="team/dominik-baki/">Team</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="referenz-revierhege.html">Referenzprojekt</a><a href="blog.html" aria-current="page">Blog</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="team/dominik-baki/">Team</a></nav>
+
+    <main id="main-content">
+      <header class="article-hero">
+        <div>
+          <p class="eyebrow">Produktionsplanung · Bäckerhandwerk</p>
+          <h1>Produktionsplanung für Bäckereien: Was Software wirklich leisten muss</h1>
+          <p class="subpage-lead">Verkaufsdaten können Mengenentscheidungen unterstützen. Dafür muss eine Lösung jedoch mehr verstehen als die verkaufte Stückzahl: Verfügbarkeit, Ausverkäufe, Retouren und die Besonderheiten des Verkaufstags.</p>
+          <div class="article-meta"><span>Von Dominik Baki</span><time datetime="2026-08-08">8. August 2026</time><span>8 Minuten Lesezeit</span></div>
+        </div>
+      </header>
+
+      <article class="article-main">
+        <div class="article-content">
+          <p class="article-intro">Produktionsplanung in einer Bäckerei ist keine reine Rechenaufgabe. Sie ist eine tägliche Entscheidung unter Unsicherheit: genug Ware bereitstellen, ohne vermeidbare Retouren und Abschriften zu erzeugen.</p>
+
+          <figure class="article-figure">
+            <img src="assets/blog-produktionsplanung-baeckerei.png" alt="Leerer Backzettel mit der Frage: Wie viel braucht morgen wirklich?" width="720" height="720">
+            <figcaption>Die technische Frage beginnt erst nach der betrieblichen Frage: Welche Menge wird morgen tatsächlich gebraucht?</figcaption>
+          </figure>
+
+          <h2>Die tägliche Planung verbindet Erfahrung und Unsicherheit</h2>
+          <p>Für viele Artikel muss die Entscheidung getroffen werden, bevor der tatsächliche Verkaufstag bekannt ist. Verantwortliche berücksichtigen Wochentag, Filiale, Wetter, Ferien, Feiertage, Aktionen und ihre Erfahrung mit dem Sortiment. Gleichzeitig sollen Frische und Verfügbarkeit stimmen.</p>
+          <p>Software für die Produktionsplanung kann an dieser Stelle unterstützen. Sie darf die betriebliche Entscheidung aber nicht auf eine scheinbar präzise Zahl reduzieren. Ein Mengenvorschlag ist nur hilfreich, wenn nachvollziehbar bleibt, welche Beobachtungen dahinterstehen und wie der Betrieb davon abweichen kann.</p>
+          <p>Die richtige Ausgangsfrage lautet deshalb nicht: <strong>Welche Prognosefunktion können wir bauen?</strong> Sie lautet: <strong>Welche Mengenentscheidung soll für welche Person unter welchen Bedingungen verlässlicher werden?</strong></p>
+
+          <h2>Verkauf ist nicht automatisch Nachfrage</h2>
+          <p>Historische Verkaufszahlen sind wichtig. Allein betrachtet können sie jedoch in die falsche Richtung führen.</p>
+          <p>Wurden von einem Artikel 20 Stück verkauft, kann das bedeuten, dass genau 20 Stück nachgefragt wurden. Es kann aber auch bedeuten, dass nur 20 Stück verfügbar waren und der Artikel schon deutlich vor Ladenschluss ausverkauft war. In beiden Fällen steht dieselbe Verkaufszahl in der Auswertung – die betriebliche Bedeutung ist unterschiedlich.</p>
+          <p>Eine Produktionsplanung muss deshalb zwischen tatsächlichem Verkauf und möglicher, aber nicht bedienter Nachfrage unterscheiden. Ohne Ausverkaufsstatus oder eine vergleichbare Information kann eine niedrige Verkaufsmenge fälschlich als schwache Nachfrage interpretiert werden.</p>
+
+          <div class="article-callout">
+            <p class="eyebrow">Zentrale Datenfrage</p>
+            <p><strong>War die Verkaufsmenge durch die Nachfrage begrenzt – oder durch die verfügbare Menge?</strong> Ohne diese Unterscheidung lernt eine Planung möglicherweise aus dem eigenen Ausverkauf.</p>
+          </div>
+
+          <h2>Welche Daten für einen ersten Test gebraucht werden</h2>
+          <p>Für einen begrenzten Pilot ist nicht sofort eine vollständige Datenplattform erforderlich. Wichtiger ist, dass die wenigen verwendeten Felder gemeinsam verstanden werden.</p>
+          <ul>
+            <li><strong>Datum und Filiale:</strong> Wo und an welchem Verkaufstag entstand die Beobachtung?</li>
+            <li><strong>Artikel:</strong> Welches Produkt wird eindeutig betrachtet?</li>
+            <li><strong>Tatsächlich verfügbare Menge:</strong> Wie viel Ware stand insgesamt zum Verkauf?</li>
+            <li><strong>Verkaufte Menge:</strong> Wie viele Einheiten wurden tatsächlich verkauft?</li>
+            <li><strong>Retouren oder Abschriften:</strong> Welche Menge blieb übrig oder konnte nicht mehr verkauft werden?</li>
+            <li><strong>Ausverkaufsstatus:</strong> War der Artikel vor dem vorgesehenen Verkaufsende nicht mehr verfügbar?</li>
+            <li><strong>Besonderheiten:</strong> Gab es Aktionen, Feiertage, Ferien oder andere erkennbare Abweichungen?</li>
+          </ul>
+          <p>Personenbezogene Kundendaten sind dafür nicht erforderlich. Für die Planung zählt zunächst der Artikel-Tag: Was war verfügbar, was wurde verkauft und was blieb als Ergebnis zurück?</p>
+
+          <h2>Vier Anforderungen an gute Produktionsplanungssoftware</h2>
+          <p>Eine gute Lösung liefert nicht nur einen Vorschlag. Sie macht die Entscheidung im Betrieb besser prüfbar.</p>
+          <div class="article-question-list">
+            <div><span>01 · Nachvollziehbar</span><strong>Verantwortliche erkennen, welche Informationen den Mengenvorschlag beeinflusst haben.</strong></div>
+            <div><span>02 · Korrigierbar</span><strong>Erfahrung, Aktionen und besondere Verkaufstage können bewusst berücksichtigt werden.</strong></div>
+            <div><span>03 · Filialbezogen</span><strong>Unterschiedliche Lagen und Verkaufsverläufe verschwinden nicht in einem allgemeinen Durchschnitt.</strong></div>
+            <div><span>04 · Messbar</span><strong>Nach dem Verkaufstag lässt sich prüfen, ob der Vorschlag tatsächlich besser war.</strong></div>
+          </div>
+          <p>Eine Software, die Empfehlungen ausgibt, aber Abweichungen nicht erklären oder auswerten kann, schafft eine neue Abhängigkeit. Die betriebliche Verantwortung bleibt jedoch bei den Menschen, die Produktion und Verkauf kennen.</p>
+
+          <h2>Ein Beispiel: gleiche Verkaufszahl, andere Entscheidung</h2>
+          <p>Das folgende Beispiel ist bewusst vereinfacht und stellt keine Aussage über einen konkreten Betrieb dar.</p>
+          <p>An zwei Montagen werden von einem Artikel jeweils 30 Stück verkauft. Am ersten Montag waren 40 Stück verfügbar und 10 blieben übrig. Am zweiten Montag waren nur 30 Stück verfügbar und der Artikel war bereits am Nachmittag ausverkauft.</p>
+          <p>Eine Auswertung, die nur die Verkaufszahl betrachtet, sieht zwei identische Tage. Eine belastbare Produktionsplanung erkennt zwei verschiedene Situationen:</p>
+          <ul>
+            <li>Am ersten Tag war die verfügbare Menge höher als der tatsächliche Verkauf.</li>
+            <li>Am zweiten Tag begrenzte die verfügbare Menge möglicherweise den Verkauf.</li>
+          </ul>
+          <p>Ob am zweiten Tag tatsächlich mehr als 30 Stück verkauft worden wären, bleibt zunächst eine Annahme. Der Ausverkauf ist aber ein wichtiges Signal, das bei der nächsten Entscheidung nicht fehlen darf.</p>
+
+          <h2>Retouren senken, ohne das Problem zu verschieben</h2>
+          <p>Eine niedrigere Retourenquote ist nicht automatisch ein Erfolg. Werden Mengen so weit reduziert, dass relevante Artikel früher ausverkauft sind, wurde der Verlust möglicherweise nur gegen entgangenen Verkauf getauscht.</p>
+          <p>Ein sinnvoller Vergleich betrachtet deshalb mehrere Kennzahlen gemeinsam:</p>
+          <ul>
+            <li>Retouren oder Abschriften je Artikel und Verkaufstag,</li>
+            <li>Häufigkeit und Zeitpunkt von Ausverkäufen,</li>
+            <li>Veränderung der verkauften Menge,</li>
+            <li>eine vereinfachte wirtschaftliche Wirkung auf Basis der verfügbaren Kosten- und Erlösdaten.</li>
+          </ul>
+          <p>Erst wenn weniger Verlust entsteht, ohne die Warenverfügbarkeit unvertretbar zu verschlechtern, ist eine Mengenempfehlung betrieblich hilfreich.</p>
+
+          <h2>Warum ein Pilot klein beginnen sollte</h2>
+          <p>Ein vollständiges Filialnetz und das gesamte Sortiment erzeugen früh viel Datenaufwand. Für die erste wichtige Antwort sind sie häufig nicht nötig.</p>
+          <p>Der aktuelle Ansatz von byte &amp; Handwerk begrenzt den Test deshalb auf eine Filiale, bis zu 30 relevante Artikel und einen Vergleich über vier Wochen. Vor der technischen Automatisierung werden Datenbegriffe, heutiger Planungsablauf und Messgrößen gemeinsam geklärt.</p>
+          <p>Am Ende soll keine möglichst große Funktionsliste stehen, sondern eine begründete Entscheidung:</p>
+          <ol>
+            <li>Sind die vorhandenen Daten ausreichend belastbar?</li>
+            <li>Entstehen Mengenvorschläge, die im Betriebsalltag nachvollziehbar sind?</li>
+            <li>Verbessert sich die Balance aus Retouren, Ausverkäufen und wirtschaftlicher Wirkung?</li>
+            <li>Lohnt sich die nächste Stufe der Softwareentwicklung?</li>
+          </ol>
+
+          <h2>Wann eine Tabelle reicht – und wann Software sinnvoll wird</h2>
+          <p>Für einen ersten Pilot kann eine strukturierte Tabelle die richtige Lösung sein. Sie macht Begriffe sichtbar, lässt sich schnell anpassen und verhindert, dass eine ungeklärte Logik zu früh in Software gegossen wird.</p>
+          <p>Eine individuelle Anwendung wird interessanter, wenn der Ablauf regelmäßig wiederholt wird, mehrere Rollen dieselben Informationen benötigen, manuelle Übertragung dauerhaft Fehler oder Aufwand erzeugt und der erwartete Nutzen im Pilot bestätigt wurde.</p>
+          <p>Die Reihenfolge ist entscheidend: <strong>Problem prüfen, Praxistest durchführen, Ergebnis bewerten und erst dann begründet ausbauen.</strong></p>
+
+          <h2>Häufige Fragen zur Produktionsplanung in Bäckereien</h2>
+          <h3>Welche Daten braucht eine Bäckerei für eine bessere Produktionsplanung?</h3>
+          <p>Für einen ersten Test werden vor allem Datum, Filiale, Artikel, tatsächlich verfügbare Menge, verkaufte Menge, Retouren oder Abschriften und der Ausverkaufsstatus benötigt. Aktionen und besondere Verkaufstage helfen bei der Einordnung.</p>
+
+          <h3>Reicht für den Anfang eine Tabelle?</h3>
+          <p>Ja. Eine sauber aufgebaute Tabelle kann für einen begrenzten Pilot ausreichen. Software wird sinnvoll, wenn der bestätigte Ablauf regelmäßig wiederholt, über mehrere Rollen genutzt oder durch manuelle Übertragung unnötig fehleranfällig wird.</p>
+
+          <h3>Braucht die Produktionsplanung sofort künstliche Intelligenz?</h3>
+          <p>Nein. Zuerst müssen Entscheidung, Datenqualität und Erfolgsmessung stimmen. Erst danach lässt sich beurteilen, welche Prognosemethode für den konkreten Betrieb angemessen ist.</p>
+
+          <h3>Wie lässt sich eine Produktionsplanung sinnvoll testen?</h3>
+          <p>Ein Pilot kann auf eine Filiale und ein begrenztes Sortiment beschränkt werden. Baseline und Pilotphase werden mit denselben Kennzahlen für Retouren, Ausverkäufe und wirtschaftliche Wirkung verglichen.</p>
+
+          <section class="share-panel" data-share-panel data-share-title="Produktionsplanung für Bäckereien: Was Software wirklich leisten muss" data-share-text="Wie Verkaufsdaten, Ausverkäufe und Retouren zu einer nachvollziehbaren Mengenentscheidung zusammengeführt werden." data-share-url="https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html" aria-labelledby="share-heading-produktionsplanung">
+            <p class="eyebrow eyebrow-light">Beitrag weitergeben</p>
+            <h2 id="share-heading-produktionsplanung">Wer beschäftigt sich gerade mit der täglichen Mengenplanung?</h2>
+            <p>Teilen Sie den Beitrag direkt oder kopieren Sie den Link für eine persönliche Nachricht.</p>
+            <div class="share-actions">
+              <a class="share-action share-action-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbyteundhandwerk.de%2Fblog-produktionsplanung-baeckerei.html" target="_blank" rel="noopener noreferrer">Auf LinkedIn teilen</a>
+              <a class="share-action" href="mailto:?subject=Produktionsplanung%20f%C3%BCr%20B%C3%A4ckereien&amp;body=Dieser%20Beitrag%20k%C3%B6nnte%20f%C3%BCr%20Sie%20interessant%20sein%3A%0A%0Ahttps%3A%2F%2Fbyteundhandwerk.de%2Fblog-produktionsplanung-baeckerei.html">Per E-Mail teilen</a>
+              <button class="share-action" type="button" data-copy-link>Link kopieren</button>
+              <button class="share-action" type="button" data-native-share hidden>Weitere Optionen</button>
+            </div>
+            <p class="share-status" data-share-status aria-live="polite"></p>
+          </section>
+
+          <div class="article-footer">
+            <a class="text-link" href="baeckerei-pilot.html">Bäckerei-Pilot im Detail →</a>
+            <a class="text-link" href="blog.html">Alle Beiträge →</a>
+          </div>
+        </div>
+      </article>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Produktionsplanung im eigenen Betrieb prüfen</p>
+        <h2>Beginnen Sie mit einer Filiale und einer klaren Messfrage.</h2>
+        <p>Im unverbindlichen 20-minütigen Pilot-Check klären wir Planungsablauf, vorhandene Daten und die kleinste sinnvolle Erprobung.</p>
+        <a class="button button-light" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="index.html">Startseite</a><a href="mission.html">Haltung</a><a href="referenz-revierhege.html">Referenzprojekt</a><a href="blog.html">Blog</a><a href="baeckerei-pilot.html">Bäckerei-Pilot</a><a href="team/dominik-baki/">Team</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a><a href="https://www.linkedin.com/company/byteundhandwerk" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
+</html>
