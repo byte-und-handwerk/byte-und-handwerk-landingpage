@@ -17,6 +17,7 @@ on:
       timezone: Europe/Berlin
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -152,4 +153,11 @@ jobs:
               return;
             }
 
-            core.notice(`PR #${pullRequest.number} wurde für ${today} veröffentlicht.`);
+            await github.rest.actions.createWorkflowDispatch({
+              owner,
+              repo,
+              workflow_id: "deploy-pages.yml",
+              ref: "main"
+            });
+
+            core.notice(`PR #${pullRequest.number} wurde für ${today} gemergt und das Pages-Deployment wurde angefordert.`);
