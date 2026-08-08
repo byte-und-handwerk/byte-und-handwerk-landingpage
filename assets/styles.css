@@ -1045,6 +1045,27 @@ p {
   line-height: 1.5;
 }
 
+.article-figure {
+  margin: 0 0 72px;
+}
+
+.article-figure img {
+  width: min(620px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.article-figure figcaption {
+  width: min(620px, 100%);
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
 .article-content h2 {
   margin: 82px 0 22px;
   font-size: clamp(2.1rem, 4vw, 3.65rem);
