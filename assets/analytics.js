@@ -56,6 +56,7 @@ if (campaignSource && campaignMedium && campaignName) {
 
 function linkLocation(link) {
   if (link.closest("[data-share-panel]")) return "share_panel";
+  if (link.closest(".search-results")) return "site_search";
   if (link.closest(".cta, .hero-actions")) return "cta";
   if (link.closest(".mobile-nav")) return "mobile_navigation";
   if (link.closest(".desktop-nav")) return "desktop_navigation";
@@ -64,6 +65,29 @@ function linkLocation(link) {
   if (link.closest(".article-main")) return "article";
   return "content";
 }
+
+function privacySafeSearchTerm(value) {
+  const searchTerm = conciseText(value, 80);
+  const digitCount = (searchTerm.match(/\d/g) || []).length;
+  const containsPersonalDataPattern = /\S+@\S+|https?:\/\/|www\.|\b\d{2,}[\s/.-]?\d{2,}/i.test(searchTerm);
+  if (containsPersonalDataPattern || digitCount >= 6) return "";
+  return searchTerm;
+}
+
+document.addEventListener("site:search", (event) => {
+  const searchTerm = privacySafeSearchTerm(event.detail?.searchTerm);
+  if (!searchTerm) return;
+
+  const resultCount = Math.max(0, Number(event.detail?.resultCount) || 0);
+  trackEvent("view_search_results", {
+    search_term: searchTerm,
+    search_result_count: resultCount,
+  });
+
+  if (resultCount === 0) {
+    trackEvent("search_no_results", { search_term: searchTerm });
+  }
+});
 
 function articleId() {
   return canonicalPath.split("/").filter(Boolean).pop()?.replace(/\.html$/, "") || "startseite";

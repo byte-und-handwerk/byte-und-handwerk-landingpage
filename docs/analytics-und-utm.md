@@ -15,10 +15,14 @@ Die Website unterscheidet Zugriffe aus LinkedIn, dem Google-Unternehmensprofil u
 | `article_read` | Mindestens 75 Prozent eines Beitrags erreicht | `content_id`, `reading_progress` |
 | `article_share` | LinkedIn-, E-Mail-, Kopier- oder System-Teilen | `method`, `content_id` |
 | `site_link_click` | Jeder Klick auf einen Website-Link | `site_link_url`, `site_link_text`, `site_link_domain`, `site_link_type`, `site_link_location` |
+| `view_search_results` | Ausgeführte interne Suche | `search_term`, `search_result_count` |
+| `search_no_results` | Interne Suche ohne Treffer | `search_term` |
 
 Alle Ereignisse enthalten zusätzlich `page_path`.
 
 `site_link_click` unterscheidet interne Links, externe Links, Sprungmarken, Downloads sowie E-Mail- und Telefonlinks. E-Mail-Adressen, Telefonnummern und URL-Abfrageparameter werden vor der Übertragung entfernt.
+
+Die interne Suche überträgt Suchbegriffe nur nach einer Analytics-Einwilligung. Erkannte E-Mail-Adressen, URLs und Zahlenfolgen mit möglichem Personenbezug werden verworfen. Nulltreffer dienen als redaktionelle Content-Impulse und erzeugen nicht automatisch öffentliche Seiten.
 
 ## Benutzerdefinierte Dimensionen
 

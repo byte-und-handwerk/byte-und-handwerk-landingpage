@@ -1,6 +1,14 @@
 const navigationToggle = document.querySelector("[data-nav-toggle]");
 const mobileNavigation = document.querySelector("[data-mobile-nav]");
 
+document.querySelectorAll(".desktop-nav, .mobile-nav").forEach((navigation) => {
+  if (navigation.querySelector('a[href$="search.html"]')) return;
+  const searchLink = document.createElement("a");
+  searchLink.href = "/search.html";
+  searchLink.textContent = "Suche";
+  navigation.appendChild(searchLink);
+});
+
 function setNavigation(open) {
   if (!navigationToggle || !mobileNavigation) return;
   navigationToggle.setAttribute("aria-expanded", String(open));
@@ -26,6 +34,13 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
 });
 
 document.querySelectorAll(".footer-links").forEach((footerLinks) => {
+  if (!footerLinks.querySelector('a[href$="search.html"]')) {
+    const searchLink = document.createElement("a");
+    searchLink.href = "/search.html";
+    searchLink.textContent = "Suche";
+    footerLinks.prepend(searchLink);
+  }
+
   if (footerLinks.querySelector("[data-open-consent]")) return;
   const consentButton = document.createElement("button");
   consentButton.className = "footer-consent-link";
