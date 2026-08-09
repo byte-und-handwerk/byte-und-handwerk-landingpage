@@ -1,4 +1,8 @@
 window.dataLayer = window.dataLayer || [];
+const currentPagePath = window.location.pathname || "/";
+const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+const canonicalPath = new URL(canonicalUrl, window.location.origin).pathname || currentPagePath;
+const pagePath = canonicalPath;
 
 function gtag() {
   window.dataLayer.push(arguments);
@@ -23,10 +27,9 @@ gtag("config", "G-72ZE2LZPZM", {
   anonymize_ip: true,
   allow_google_signals: false,
   allow_ad_personalization_signals: false,
+  page_location: canonicalUrl,
+  page_path: pagePath,
 });
-
-const pagePath = window.location.pathname || "/";
-const canonicalPath = document.querySelector('link[rel="canonical"]')?.pathname || pagePath;
 
 function conciseText(value, maximumLength = 100) {
   return String(value || "").trim().replace(/\s+/g, " ").slice(0, maximumLength);
@@ -197,9 +200,9 @@ document.addEventListener("click", (event) => {
   }
 
   const isPilotPage = linkUrl.origin === window.location.origin
-    && linkUrl.pathname.endsWith("/baeckerei-pilot.html");
+    && linkUrl.pathname.endsWith("/baeckerei-pilot");
 
-  if (isPilotPage && !pagePath.endsWith("/baeckerei-pilot.html")) {
+  if (isPilotPage && !pagePath.endsWith("/baeckerei-pilot")) {
     trackEvent("pilot_offer_click", {
       link_location: location,
       link_text: linkText,

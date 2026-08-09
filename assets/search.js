@@ -157,7 +157,7 @@ function renderSearch(query, track = false) {
 
 async function loadSearchIndex() {
   try {
-    const response = await fetch("assets/search-index.json", { cache: "no-store" });
+    const response = await fetch("/assets/search-index.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Search index returned ${response.status}`);
     const index = await response.json();
     indexedDocuments = Array.isArray(index.documents) ? index.documents : [];

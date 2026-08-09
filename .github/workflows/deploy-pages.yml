@@ -30,6 +30,9 @@ jobs:
       - name: Build website search index
         run: node scripts/build-search-index.mjs
 
+      - name: Validate clean URLs
+        run: node scripts/validate-clean-urls.mjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 

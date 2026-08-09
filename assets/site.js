@@ -1,10 +1,18 @@
 const navigationToggle = document.querySelector("[data-nav-toggle]");
 const mobileNavigation = document.querySelector("[data-mobile-nav]");
 
+const cleanPath = window.location.pathname === "/index.html"
+  ? "/"
+  : window.location.pathname.replace(/\.html$/, "");
+
+if (cleanPath !== window.location.pathname) {
+  window.location.replace(`${cleanPath}${window.location.search}${window.location.hash}`);
+}
+
 document.querySelectorAll(".desktop-nav, .mobile-nav").forEach((navigation) => {
-  if (navigation.querySelector('a[href$="search.html"]')) return;
+  if (navigation.querySelector('a[href="/search"]')) return;
   const searchLink = document.createElement("a");
-  searchLink.href = "/search.html";
+  searchLink.href = "/search";
   searchLink.textContent = "Suche";
   navigation.appendChild(searchLink);
 });
@@ -34,9 +42,9 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
 });
 
 document.querySelectorAll(".footer-links").forEach((footerLinks) => {
-  if (!footerLinks.querySelector('a[href$="search.html"]')) {
+  if (!footerLinks.querySelector('a[href="/search"]')) {
     const searchLink = document.createElement("a");
-    searchLink.href = "/search.html";
+    searchLink.href = "/search";
     searchLink.textContent = "Suche";
     footerLinks.prepend(searchLink);
   }
