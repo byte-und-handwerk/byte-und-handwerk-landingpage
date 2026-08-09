@@ -25,6 +25,17 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
   element.textContent = String(new Date().getFullYear());
 });
 
+document.querySelectorAll(".footer-links").forEach((footerLinks) => {
+  if (footerLinks.querySelector("[data-open-consent]")) return;
+  const consentButton = document.createElement("button");
+  consentButton.className = "footer-consent-link";
+  consentButton.type = "button";
+  consentButton.dataset.openConsent = "";
+  consentButton.textContent = "Cookie-Einstellungen";
+  consentButton.addEventListener("click", () => window.UC_UI?.showSecondLayer());
+  footerLinks.appendChild(consentButton);
+});
+
 function articleShareData(element) {
   const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
   return {
