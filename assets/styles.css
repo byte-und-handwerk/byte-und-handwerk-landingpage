@@ -918,6 +918,186 @@ p {
   color: var(--gold-soft);
 }
 
+.search-hero {
+  background:
+    radial-gradient(circle at 84% 14%, rgba(69, 101, 82, 0.2), transparent 28%),
+    linear-gradient(135deg, var(--paper), #e2e7dd);
+}
+
+.search-board {
+  transform: rotate(-1deg);
+}
+
+.search-board .decision-sheet > span,
+.search-board .panel-footnote strong {
+  color: #8fb79b;
+}
+
+.site-search-form {
+  max-width: 920px;
+  margin-top: 48px;
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.site-search-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 780;
+}
+
+.site-search-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.site-search-field input {
+  min-width: 0;
+  min-height: 54px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--ink);
+}
+
+.site-search-field input:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.search-privacy-note,
+.search-status {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.search-privacy-note {
+  margin: 14px 0 0;
+}
+
+.search-status {
+  margin: 30px 0 0;
+  font-weight: 720;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.search-result-card,
+.search-empty-state {
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.search-result-card {
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+}
+
+.search-result-card:nth-child(3n + 2) {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.search-result-meta {
+  margin: 0;
+  color: var(--clay);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.search-result-card:nth-child(3n + 2) .search-result-meta,
+.search-result-card:nth-child(3n + 2) .text-link {
+  color: var(--gold-soft);
+}
+
+.search-result-card h2,
+.search-empty-state h2 {
+  margin: 44px 0 14px;
+  font-size: clamp(1.75rem, 2.8vw, 2.6rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.search-result-card > p:not(.search-result-meta),
+.search-empty-state p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.search-result-card:nth-child(3n + 2) > p:not(.search-result-meta) {
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.search-result-card .text-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.search-empty-state {
+  grid-column: 1 / -1;
+  background: var(--gold-soft);
+}
+
+.search-empty-state h2 {
+  margin-top: 0;
+}
+
+.topic-index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 54px;
+}
+
+.topic-index-grid article {
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  padding: clamp(26px, 4vw, 40px);
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.topic-index-grid article > span {
+  color: var(--green);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topic-index-grid h3 {
+  margin: 48px 0 14px;
+  font-size: clamp(1.75rem, 2.7vw, 2.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.topic-index-grid p {
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+
+.topic-index-grid .text-link {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1633,7 +1813,9 @@ details p {
   .principles-grid,
   .problem-grid,
   .metrics-grid,
-  .blog-grid {
+  .blog-grid,
+  .search-results,
+  .topic-index-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1693,6 +1875,10 @@ details p {
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .site-search-field {
+    grid-template-columns: 1fr;
   }
 
   .hero-actions .button {
