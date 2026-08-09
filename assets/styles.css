@@ -833,6 +833,7 @@ p {
 .footer-links a,
 .footer-consent-link {
   color: rgba(255, 255, 255, 0.76);
+  overflow-wrap: anywhere;
 }
 
 .footer-contact a:hover,
@@ -931,6 +932,34 @@ p {
 .search-board .decision-sheet > span,
 .search-board .panel-footnote strong {
   color: #8fb79b;
+}
+
+.search-hero > *,
+.search-board .decision-sheet,
+.site-search-field > *,
+.search-results > *,
+.search-result-card > *,
+.topic-index-grid > *,
+.topic-index-grid article > *,
+.process-list article > * {
+  min-width: 0;
+}
+
+.search-hero h1,
+.search-board h2,
+.search-status,
+.search-result-card h2,
+.search-result-card h2 a,
+.search-result-card > p,
+.search-empty-state h2,
+.search-empty-state p,
+.topic-index-grid h3,
+.topic-index-grid p,
+.process-list h3,
+.process-list p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  hyphens: none;
 }
 
 .site-search-form {
