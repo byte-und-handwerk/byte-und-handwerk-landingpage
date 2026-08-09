@@ -830,13 +830,25 @@ p {
 }
 
 .footer-contact a,
-.footer-links a {
+.footer-links a,
+.footer-consent-link {
   color: rgba(255, 255, 255, 0.76);
 }
 
 .footer-contact a:hover,
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-consent-link:hover {
   color: var(--gold-soft);
+}
+
+.footer-consent-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .footer-meta {
