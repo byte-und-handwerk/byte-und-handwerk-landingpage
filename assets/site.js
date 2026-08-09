@@ -55,7 +55,23 @@ document.querySelectorAll(".footer-links").forEach((footerLinks) => {
   consentButton.type = "button";
   consentButton.dataset.openConsent = "";
   consentButton.textContent = "Cookie-Einstellungen";
-  consentButton.addEventListener("click", () => window.UC_UI?.showSecondLayer());
+  consentButton.addEventListener("click", () => {
+    if (window.__ucCmp?.showSecondLayer) {
+      window.__ucCmp.showSecondLayer();
+      return;
+    }
+
+    if (window.UC_UI?.showSecondLayer) {
+      window.UC_UI.showSecondLayer();
+      return;
+    }
+
+    document
+      .querySelector("#usercentrics-root")
+      ?.shadowRoot
+      ?.querySelector('[data-testid="uc-privacy-button"]')
+      ?.click();
+  });
   footerLinks.appendChild(consentButton);
 });
 
