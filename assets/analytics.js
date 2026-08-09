@@ -24,8 +24,3 @@ gtag("config", "G-72ZE2LZPZM", {
   allow_google_signals: false,
   allow_ad_personalization_signals: false,
 });
-
-const analyticsScript = document.createElement("script");
-analyticsScript.async = true;
-analyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-72ZE2LZPZM";
-document.head.appendChild(analyticsScript);
