@@ -55,15 +55,58 @@ if (campaignSource && campaignMedium && campaignName) {
 }
 
 function linkLocation(link) {
+  if (link.closest("[data-share-panel]")) return "share_panel";
+  if (link.closest(".cta, .hero-actions")) return "cta";
+  if (link.closest(".mobile-nav")) return "mobile_navigation";
+  if (link.closest(".desktop-nav")) return "desktop_navigation";
   if (link.closest(".site-header")) return "header";
   if (link.closest(".site-footer")) return "footer";
-  if (link.closest(".cta")) return "cta";
   if (link.closest(".article-main")) return "article";
   return "content";
 }
 
 function articleId() {
   return canonicalPath.split("/").filter(Boolean).pop()?.replace(/\.html$/, "") || "startseite";
+}
+
+function linkType(link, targetUrl) {
+  const rawHref = link.getAttribute("href") || "";
+  const isSamePageAnchor = targetUrl.origin === window.location.origin
+    && targetUrl.pathname === window.location.pathname
+    && targetUrl.search === window.location.search
+    && Boolean(targetUrl.hash);
+
+  if (rawHref.startsWith("#") || isSamePageAnchor) return "anchor";
+  if (targetUrl.protocol === "mailto:") return "email";
+  if (targetUrl.protocol === "tel:") return "phone";
+  if (link.hasAttribute("download") || /\.(pdf|docx?|xlsx?|csv|zip)$/i.test(targetUrl.pathname)) return "download";
+  if (targetUrl.origin === window.location.origin) return "internal";
+  if (["http:", "https:"].includes(targetUrl.protocol)) return "outbound";
+  return "other";
+}
+
+function reportableLinkUrl(targetUrl, type) {
+  if (type === "email") return "mailto:";
+  if (type === "phone") return "tel:";
+  if (["http:", "https:"].includes(targetUrl.protocol)) {
+    return `${targetUrl.origin}${targetUrl.pathname}${targetUrl.hash}`;
+  }
+  return targetUrl.protocol;
+}
+
+function reportableLinkText(link, type) {
+  if (type === "email") return "email_link";
+  if (type === "phone") return "phone_link";
+
+  return conciseText(
+    link.dataset.analyticsLabel
+      || link.getAttribute("aria-label")
+      || link.textContent
+      || link.querySelector("img")?.alt
+      || link.title
+      || "unlabeled_link",
+    150,
+  );
 }
 
 document.addEventListener("click", (event) => {
@@ -85,8 +128,25 @@ document.addEventListener("click", (event) => {
   if (!(target instanceof HTMLAnchorElement)) return;
 
   const href = target.getAttribute("href") || "";
-  const linkText = conciseText(target.textContent);
   const location = linkLocation(target);
+
+  let linkUrl;
+  try {
+    linkUrl = new URL(target.href, window.location.href);
+  } catch {
+    return;
+  }
+
+  const type = linkType(target, linkUrl);
+  const linkText = reportableLinkText(target, type);
+
+  trackEvent("site_link_click", {
+    site_link_url: reportableLinkUrl(linkUrl, type),
+    site_link_text: linkText,
+    site_link_domain: linkUrl.hostname || linkUrl.protocol.replace(":", ""),
+    site_link_type: type,
+    site_link_location: location,
+  });
 
   if (target.closest("[data-share-panel]")) {
     const method = target.classList.contains("share-action-linkedin") ? "linkedin" : "email";
@@ -101,13 +161,6 @@ document.addEventListener("click", (event) => {
 
   if (href.startsWith("mailto:")) {
     trackEvent("contact_click", { contact_method: "email", link_location: location });
-    return;
-  }
-
-  let linkUrl;
-  try {
-    linkUrl = new URL(target.href, window.location.href);
-  } catch {
     return;
   }
 

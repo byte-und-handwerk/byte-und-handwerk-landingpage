@@ -14,8 +14,23 @@ Die Website unterscheidet Zugriffe aus LinkedIn, dem Google-Unternehmensprofil u
 | `contact_click` | Klick auf Telefonnummer oder direkte E-Mail | `contact_method`, `link_location` |
 | `article_read` | Mindestens 75 Prozent eines Beitrags erreicht | `content_id`, `reading_progress` |
 | `article_share` | LinkedIn-, E-Mail-, Kopier- oder System-Teilen | `method`, `content_id` |
+| `site_link_click` | Jeder Klick auf einen Website-Link | `site_link_url`, `site_link_text`, `site_link_domain`, `site_link_type`, `site_link_location` |
 
 Alle Ereignisse enthalten zusätzlich `page_path`.
+
+`site_link_click` unterscheidet interne Links, externe Links, Sprungmarken, Downloads sowie E-Mail- und Telefonlinks. E-Mail-Adressen, Telefonnummern und URL-Abfrageparameter werden vor der Übertragung entfernt.
+
+## Benutzerdefinierte Dimensionen
+
+Am 9. August 2026 wurden in GA4 unter **Verwaltung → Datenanzeige → Benutzerdefinierte Definitionen** folgende Dimensionen mit dem Anwendungsbereich **Ereignis** angelegt:
+
+| Dimensionsname | Ereignisparameter |
+| --- | --- |
+| Linkziel | `site_link_url` |
+| Linktext | `site_link_text` |
+| Linkdomain | `site_link_domain` |
+| Linktyp | `site_link_type` |
+| Linkposition | `site_link_location` |
 
 ## Einheitliche Benennung
 
@@ -68,5 +83,8 @@ https://byteundhandwerk.de/blog-produktionsplanung-baeckerei.html?utm_source=goo
 2. Unter **Berichte → Interaktion → Ereignisse** die oben genannten Ereignisse vergleichen.
 3. `pilot_check_click` später als Schlüsselereignis markieren, sobald genügend echte Zugriffe vorliegen.
 4. Für den Kanalvergleich Quelle/Medium mit `pilot_check_click` kombinieren.
+5. Unter **Expl. Datenanalyse** nach `site_link_click` filtern und Linktext, Linkziel, Linktyp und Linkposition mit der Ereignisanzahl vergleichen.
+
+Die automatische GA4-Erfassung ausgehender Klicks erzeugt zusätzlich das Ereignis `click`. Für die vollständige Linkauswertung ausschließlich `site_link_click` verwenden und beide Ereignisse nicht addieren.
 
 Ein Klick auf Cal.com zeigt zunächst Termininteresse. Eine tatsächlich abgeschlossene Buchung wird erst mit einer späteren Cal.com-Anbindung als eigenes Ereignis messbar.
