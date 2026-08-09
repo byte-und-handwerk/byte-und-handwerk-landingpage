@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-09T18:03:13.256Z",
+  "generatedAt": "2026-08-09T22:11:43.778Z",
   "documents": [
     {
       "id": "index",
@@ -43,7 +43,7 @@
       "type": "Seite",
       "title": "Vier-Wochen-Pilot für bessere Mengenplanung",
       "description": "Pilot für Bäckereien: Retouren reduzieren, Ausverkäufe im Blick behalten und tägliche Mengenentscheidungen vier Wochen lang messbar prüfen.",
-      "url": "https://byteundhandwerk.de/baeckerei-pilot.html",
+      "url": "https://byteundhandwerk.de/baeckerei-pilot",
       "publishedAt": "",
       "headings": [
         "Weniger Retouren. Ohne früher ausverkauft zu sein.",
@@ -82,7 +82,7 @@
       "type": "Beitrag",
       "title": "Warum ein begründetes Nein ein gutes Projektergebnis ist",
       "description": "Was RevierHege über MVP, Praxistest und Marktvalidierung zeigt: Ein funktionierender Pilot kann zu einem begründeten Nein zur kommerziellen Weiterentwicklung führen.",
-      "url": "https://byteundhandwerk.de/blog-begruendetes-nein.html",
+      "url": "https://byteundhandwerk.de/blog-begruendetes-nein",
       "publishedAt": "2026-08-06",
       "headings": [
         "Warum ein begründetes Nein ein gutes Projektergebnis sein kann",
@@ -113,7 +113,7 @@
       "type": "Beitrag",
       "title": "Verantwortung braucht Entscheidungsrechte",
       "description": "Sieben Prüffragen für technische Partnerschaften: Produktumfang, Entscheidungsrechte, Finanzierung, Ressourcen, geistiges Eigentum und Chancen-Risiko-Verteilung.",
-      "url": "https://byteundhandwerk.de/blog-technische-partnerschaft.html",
+      "url": "https://byteundhandwerk.de/blog-technische-partnerschaft",
       "publishedAt": "2026-08-06",
       "headings": [
         "Verantwortung braucht Entscheidungsrechte",
@@ -151,7 +151,7 @@
       "type": "Seite",
       "title": "Praxiswissen zu Produktvalidierung und Digitalisierung",
       "description": "Praxisnahe Beiträge von byte & Handwerk über Produktvalidierung, digitale Piloten, technische Verantwortung und begründete Entscheidungen.",
-      "url": "https://byteundhandwerk.de/blog.html",
+      "url": "https://byteundhandwerk.de/blog",
       "publishedAt": "",
       "headings": [
         "Erkenntnisse statt Erfolgsfolklore. Entscheidungen statt Techniktheater.",
@@ -180,7 +180,7 @@
       "type": "Seite",
       "title": "Haltung und Arbeitsweise",
       "description": "Die Haltung von byte & Handwerk: Menschen vor Modellen, Verstehen vor Lösungen und Wirkung vor Aktivität.",
-      "url": "https://byteundhandwerk.de/mission.html",
+      "url": "https://byteundhandwerk.de/mission",
       "publishedAt": "",
       "headings": [
         "Wir entwickeln nicht zuerst Software. Wir verstehen zuerst den Arbeitsalltag.",
@@ -213,7 +213,7 @@
       "type": "Seite",
       "title": "RevierHege: Referenzprojekt und Produktvalidierung",
       "description": "Wie aus einem realen Problem ein iOS-Pilot entstand, mit Nutzern geprüft und nach der Marktvalidierung bewusst nicht kommerziell weitergeführt wurde.",
-      "url": "https://byteundhandwerk.de/referenz-revierhege.html",
+      "url": "https://byteundhandwerk.de/referenz-revierhege",
       "publishedAt": "",
       "headings": [
         "Ein echtes Problem. Ein funktionierender Pilot. Und ein begründetes Nein.",
