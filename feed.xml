@@ -5,7 +5,7 @@
     <link>https://byteundhandwerk.de/blog</link>
     <description>Praxisnahe Beiträge über Produktvalidierung, digitale Piloten und technische Verantwortung.</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Warum ein begründetes Nein ein gutes Projektergebnis sein kann</title>
@@ -13,7 +13,7 @@
       <guid isPermaLink="true">https://byteundhandwerk.de/blog-begruendetes-nein</guid>
       <pubDate>Thu, 06 Aug 2026 11:00:00 +0200</pubDate>
       <category>Produktvalidierung</category>
-      <description>Was RevierHege über MVP, Praxistest und Marktvalidierung zeigt: Ein funktionierender Pilot kann zu einem begründeten Nein zur kommerziellen Weiterentwicklung führen.</description>
+      <description>RevierHege zeigt: Ein funktionierender Pilot kann einen konkreten Nutzen bestätigen und trotzdem gegen eine kommerzielle Weiterentwicklung sprechen.</description>
     </item>
     <item>
       <title>Verantwortung braucht Entscheidungsrechte</title>
