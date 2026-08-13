@@ -48,8 +48,16 @@ Am 9. August 2026 wurden in GA4 unter **Verwaltung → Datenanzeige → Benutzer
 ### LinkedIn-Unternehmensseite
 
 ```text
-https://byteundhandwerk.de/baeckerei-pilot.html?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pilotkunden_2026&utm_content=byte_und_handwerk_post_01
+https://byteundhandwerk.de/baeckerei-pilot?utm_source=linkedin&utm_medium=organic_social&utm_campaign=pilotkunden_2026&utm_content=byte_und_handwerk_post_01
 ```
+
+Für den ersten Unternehmensbeitrag wird nach außen die eigene Kurz-URL verwendet:
+
+```text
+https://byteundhandwerk.de/pilot
+```
+
+Sie leitet ausschließlich auf den oben dokumentierten UTM-Link für `byte_und_handwerk_post_01` weiter und darf nicht für andere Kanäle oder Beiträge wiederverwendet werden.
 
 Für weitere Beiträge nur die laufende Nummer in `utm_content` anpassen.
 
