@@ -5,8 +5,16 @@
     <link>https://byteundhandwerk.de/blog</link>
     <description>Praxisnahe Beiträge über Produktvalidierung, digitale Piloten und technische Verantwortung.</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 09:00:00 +0200</lastBuildDate>
     <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bäckerei-Insolvenzen 2026: Welche Kosten Betriebe selbst beeinflussen können</title>
+      <link>https://byteundhandwerk.de/blog-baeckerei-insolvenzen-2026</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-baeckerei-insolvenzen-2026</guid>
+      <pubDate>Sat, 15 Aug 2026 09:00:00 +0200</pubDate>
+      <category>Bäckerhandwerk</category>
+      <description>63 Insolvenzen zeigen wirtschaftlichen Druck. Welche Kosten Bäckereien bei Retouren, Ausverkäufen und Mengenplanung selbst prüfen und beeinflussen können.</description>
+    </item>
     <item>
       <title>Warum ein begründetes Nein ein gutes Projektergebnis sein kann</title>
       <link>https://byteundhandwerk.de/blog-begruendetes-nein</link>

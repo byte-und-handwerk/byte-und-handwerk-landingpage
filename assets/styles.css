@@ -1304,6 +1304,13 @@ p {
   color: var(--ink);
 }
 
+.article-hero h1,
+.article-content h2,
+.article-content h3,
+.cta h2 {
+  overflow-wrap: anywhere;
+}
+
 .article-callout {
   margin: 64px 0;
   padding: clamp(28px, 5vw, 50px);
