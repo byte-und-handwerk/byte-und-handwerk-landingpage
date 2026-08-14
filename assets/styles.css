@@ -1720,6 +1720,108 @@ details p {
   font-weight: 720;
 }
 
+.credential-inline {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 680;
+}
+
+.credential-inline a {
+  border-bottom: 1px solid currentColor;
+  color: var(--clay-dark);
+}
+
+.credential-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(420px, 1.25fr);
+  gap: clamp(48px, 8vw, 120px);
+  align-items: center;
+}
+
+.credential-copy h2 {
+  margin: 0;
+  font-size: clamp(2.3rem, 4.4vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.052em;
+}
+
+.credential-copy > p:not(.eyebrow) {
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.credential-facts {
+  margin: 34px 0 0;
+}
+
+.credential-facts div {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.credential-facts div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.credential-facts dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.credential-facts dd {
+  margin: 0;
+  font-weight: 760;
+}
+
+.credential-copy .credential-note {
+  padding-left: 18px;
+  border-left: 3px solid var(--gold);
+  font-size: 0.86rem;
+}
+
+.credential-document {
+  margin: 0;
+  padding: clamp(14px, 2.4vw, 26px);
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transform: rotate(0.4deg);
+}
+
+.credential-document a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(23, 33, 38, 0.18);
+  background: #79a6b5;
+}
+
+.credential-document img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 180ms ease;
+}
+
+.credential-document a:hover img,
+.credential-document a:focus-visible img {
+  transform: scale(1.015);
+}
+
+.credential-document figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .legal-main {
   min-height: 70vh;
   padding: 72px clamp(20px, 6vw, 88px) 110px;
@@ -1814,7 +1916,8 @@ details p {
   .focus-card,
   .measurement-card,
   .reference-teaser,
-  .journal-teaser {
+  .journal-teaser,
+  .credential-layout {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1993,6 +2096,16 @@ details p {
 
   .values-list {
     grid-template-columns: 1fr;
+  }
+
+  .credential-facts div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .credential-document {
+    padding: 10px;
+    transform: none;
   }
 
   .blog-card {
