@@ -5,8 +5,16 @@
     <link>https://byteundhandwerk.de/blog</link>
     <description>Praxisnahe Beiträge über Produktvalidierung, digitale Piloten und technische Verantwortung.</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 21 Aug 2026 09:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 09:00:00 +0200</lastBuildDate>
     <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Welche Kassendaten braucht eine Bäckerei für Mengenplanung und Retourenauswertung?</title>
+      <link>https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei</guid>
+      <pubDate>Sat, 22 Aug 2026 09:00:00 +0200</pubDate>
+      <category>Kassendaten</category>
+      <description>Welche Verkaufs-, Verfügbarkeits- und Retourendaten Bäckereien für belastbare Mengenentscheidungen benötigen.</description>
+    </item>
     <item>
       <title>Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann</title>
       <link>https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt</link>
