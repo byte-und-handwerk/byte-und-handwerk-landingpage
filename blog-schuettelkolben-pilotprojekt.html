@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vom Schüttelkolben zum Pilotprojekt | byte &amp; Handwerk</title>
+    <meta name="description" content="Was Software-Pilotprojekte von Schüttelkolben, Scale-up, SOPs und dokumentierten Messgrößen in regulierten Prozessen lernen können.">
+    <meta name="search:keywords" content="Pilotprojekt Softwareentwicklung, Software Pilotprojekt, Produktvalidierung Software, regulierte Prozesse, GMP Dokumentation, Scale-up, Schüttelkolben, Prozessvalidierung, SOP, Bäckerei Pilot">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="byte &amp; Handwerk">
+    <meta property="og:title" content="Vom Schüttelkolben zum Pilotprojekt">
+    <meta property="og:description" content="Ein begrenzter Versuch muss nicht alles abbilden. Er muss die richtige Frage unter dokumentierten Bedingungen beantworten.">
+    <meta property="og:url" content="https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt">
+    <meta property="og:image" content="https://byteundhandwerk.de/web-app-manifest-512x512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="Logo von byte &amp; Handwerk">
+    <meta property="article:author" content="Dominik Baki">
+    <meta property="article:published_time" content="2026-08-21">
+    <meta property="article:modified_time" content="2026-08-21">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vom Schüttelkolben zum Pilotprojekt">
+    <meta name="twitter:description" content="Was Softwareentwicklung von begrenzten, dokumentierten Versuchen lernen kann.">
+    <meta name="twitter:image" content="https://byteundhandwerk.de/web-app-manifest-512x512.png">
+    <meta name="twitter:image:alt" content="Logo von byte &amp; Handwerk">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="byte &amp; Handwerk Praxiswissen" href="feed.xml">
+    <link rel="stylesheet" href="assets/styles.css?v=20260815-1">
+    <link rel="dns-prefetch" href="//app.usercentrics.eu">
+    <link rel="dns-prefetch" href="//api.usercentrics.eu">
+    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
+    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
+    <script id="usercentrics-cmp" data-eu-mode="true" data-settings-id="vC1A9YPEa2XgYq" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js" async></script>
+    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <script type="text/plain" data-usercentrics="Google Analytics 4" async src="https://www.googletagmanager.com/gtag/js?id=G-72ZE2LZPZM"></script>
+    <script type="text/plain" data-usercentrics="Google Analytics 4" src="assets/analytics.js?v=20260809-2"></script>
+    <script src="assets/site.js?v=20260806-2" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann",
+            "description": "Was Software-Pilotprojekte von Schüttelkolben, Scale-up, SOPs und dokumentierten Messgrößen in regulierten Prozessen lernen können.",
+            "datePublished": "2026-08-21",
+            "dateModified": "2026-08-21",
+            "image": "https://byteundhandwerk.de/web-app-manifest-512x512.png",
+            "author": {
+              "@type": "Person",
+              "name": "Dominik Baki",
+              "url": "https://byteundhandwerk.de/team/dominik-baki/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "byte & Handwerk",
+              "url": "https://byteundhandwerk.de/"
+            },
+            "mainEntityOfPage": "https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt",
+            "isPartOf": "https://byteundhandwerk.de/blog",
+            "about": ["Pilotprojekt Softwareentwicklung", "Produktvalidierung", "regulierte Prozesse", "GMP-Dokumentation", "Scale-up", "SOP"]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Was unterscheidet ein Pilotprojekt von einem verkleinerten Endprodukt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ein Pilotprojekt bildet nicht alle Funktionen eines späteren Produkts ab. Es begrenzt Umfang, Zeitraum und Messgrößen so, dass eine konkrete Annahme unter realen Bedingungen geprüft werden kann."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Warum ist Dokumentation in einem Software-Pilot wichtig?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dokumentation macht sichtbar, unter welchen Bedingungen ein Ergebnis entstand. Sie hilft, Abweichungen zu erklären, Entscheidungen nachzuvollziehen und den nächsten Versuch gezielter zu planen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wann sollte ein Pilotprojekt vergrößert werden?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Eine Erweiterung ist sinnvoll, wenn die zentrale Annahme bestätigt wurde, die Daten verlässlich genug sind und vorab festgelegte Entscheidungskriterien erreicht wurden. Mehr Funktionen ersetzen diese Prüfung nicht."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was bedeutet die Analogie zum Scale-up für Softwareentwicklung?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Beim Übergang in einen größeren Maßstab ändern sich Bedingungen und Anforderungen. In Softwareprojekten können zusätzliche Nutzer, Standorte, Datenquellen und Rollen neue Anforderungen erzeugen, die im kleinen Pilot noch nicht sichtbar waren."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Startseite",
+                "item": "https://byteundhandwerk.de/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://byteundhandwerk.de/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vom Schüttelkolben zum Pilotprojekt",
+                "item": "https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk" width="1024" height="159"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog" aria-current="page">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog" aria-current="page">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a></nav>
+
+    <main id="main-content">
+      <header class="article-hero">
+        <div>
+          <p class="eyebrow">Prozessvalidierung · Produktentwicklung</p>
+          <h1>Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann</h1>
+          <p class="subpage-lead">Ein begrenzter Versuch muss nicht alles abbilden. Er muss die richtige Frage unter dokumentierten Bedingungen beantworten und eine begründete nächste Entscheidung ermöglichen.</p>
+          <div class="article-meta"><span>Von Dominik Baki</span><time datetime="2026-08-21">21. August 2026</time><span>9 Minuten Lesezeit</span><span>Geprüft: 21. August 2026</span></div>
+        </div>
+      </header>
+
+      <article class="article-main">
+        <div class="article-content">
+          <p class="article-intro">Ein Pilot ist kein verkleinertes Endprodukt. Er ist ein begrenzter Versuch, der Annahmen prüft, relevante Parameter erfasst und eine begründete Entscheidung ermöglicht.</p>
+
+          <h2>17 Jahre unter regulierten Bedingungen prägen meinen Blick auf Piloten</h2>
+          <p>In Biotechnologie, Pharma und Life Science habe ich 17 Jahre unter stark regulierten Bedingungen gearbeitet. Dort entscheidet nicht nur das Ergebnis. Ebenso wichtig ist, unter welchen Bedingungen es entstand, wie es gemessen wurde und ob der Ablauf nachvollziehbar dokumentiert ist.</p>
+          <p>Ein häufig verwendeter Satz bringt dieses Prinzip auf den Punkt: <strong>„Was nicht dokumentiert wurde, wurde nicht gemacht.“</strong> Die Aussage klingt streng. Sie schützt aber davor, Ergebnisse im Nachhinein nur aus dem Gedächtnis zu erklären.</p>
+          <p>GMP steht für Good Manufacturing Practice. Der scherzhafte Zusatz „give more paper“ beschreibt den hohen Dokumentationsaufwand. Dieser Aufwand hat einen Zweck: Arbeitsschritte, Messwerte, Abweichungen und Entscheidungen sollen auch später noch nachvollziehbar sein.</p>
+
+          <h2>Der kleinste Ansatz beantwortet eine begrenzte Frage</h2>
+          <p>Neue biologische Prozesse begannen häufig im Schüttelkolben. Wenige hundert Milliliter Kultur, eine feste Temperatur und ausgewählte Messgrößen reichten aus, um erste Annahmen zu prüfen. Dazu gehörten zum Beispiel pH-Wert, optische Dichte und zeitlicher Wachstumsverlauf.</p>
+          <p>Der Schüttelkolben war bewusst limitiert. Sauerstoff wurde nicht aktiv eingeblasen und Kohlendioxid nicht gezielt abgeführt. Der Gasaustausch erfolgte passiv über die Oberfläche der Flüssigkeit. Die Schwenkbewegung vergrößerte diese Oberfläche und mischte die aufgenommenen Gase in die Kultur ein.</p>
+          <p>Mit steigender Zelldichte nahm der Sauerstoffbedarf zu. Gleichzeitig wurde es schwieriger, genügend Sauerstoff einzutragen und Kohlendioxid abzuführen. Auch der pH-Wert wurde in solchen frühen Ansätzen häufig nur gemessen, aber noch nicht aktiv stabil gehalten.</p>
+
+          <div class="article-callout">
+            <p class="eyebrow">Entscheidender Punkt</p>
+            <p><strong>Die bekannten Grenzen machten den Versuch nicht wertlos.</strong> Sie bestimmten, welche Aussage zulässig war und welche Frage erst im nächsten Maßstab geprüft werden konnte.</p>
+          </div>
+
+          <h2>Ein Schüttelkolben beweist nicht, dass der große Maßstab funktioniert</h2>
+          <p>Der kleine Ansatz konnte zeigen, ob eine Kultur grundsätzlich wächst, wie sich die optische Dichte entwickelt und wann erkennbare Grenzen auftreten. Er konnte nicht belegen, dass ein Prozess bei zehn, hundert oder tausend Litern identisch funktioniert.</p>
+          <p>Diese Trennung ist wichtig. Ein begrenzter Versuch liefert belastbare Erkenntnisse innerhalb seines Umfangs. Wer daraus ohne weitere Prüfung eine Aussage für den späteren Gesamtprozess ableitet, überschätzt das Ergebnis.</p>
+          <p>Für Softwareprojekte gilt dasselbe: Ein Pilot mit wenigen Nutzern oder einem Standort kann eine konkrete Annahme prüfen. Er belegt noch nicht, dass Betrieb, Rollen, Datenqualität und technische Architektur im größeren Maßstab unverändert funktionieren.</p>
+
+          <h2>Beim Scale-up kommen neue Parameter und aktive Regelungen hinzu</h2>
+          <p>Bei der Maßstabsübertragung, dem Scale-up, wurden die Werte nicht einfach proportional vergrößert. Die Bedingungen änderten sich. In kontrollierten Bioreaktoren konnten deshalb zusätzliche Parameter gemessen und aktiv geregelt werden.</p>
+          <ul>
+            <li><strong>Sauerstoffsättigung und Belüftung:</strong> Sauerstoff wurde aktiv eingetragen und die Abfuhr von Kohlendioxid unterstützt.</li>
+            <li><strong>Rührerdrehzahl:</strong> Mit zunehmender Zelldichte wurde die Durchmischung wichtiger, damit Sauerstoff und Nährstoffe möglichst gleichmäßig verteilt blieben.</li>
+            <li><strong>pH-Regelung:</strong> Der pH-Wert wurde nicht nur gemessen, sondern innerhalb festgelegter Grenzen stabilisiert.</li>
+            <li><strong>Nährstoffzufuhr:</strong> Je nach Prozess wurden Glukose oder Glycerin zugeführt. Die Zugabe orientierte sich am gemessenen Verbrauch, um Mangel und Überdosierung zu vermeiden.</li>
+            <li><strong>Biomasse:</strong> Neben der optischen Dichte konnte die Zellmasse bestimmt werden, um das Wachstum genauer zu beurteilen.</li>
+          </ul>
+          <p>Der größere Maßstab brauchte daher mehr Beobachtung, mehr Regelung und mehr Dokumentation. Genau diese zusätzlichen Informationen ermöglichten später die Ursachenanalyse, wenn ein Zielwert nicht erreicht wurde.</p>
+
+          <h2>SOPs machen Messungen vergleichbar</h2>
+          <p>Für wiederkehrende Messungen und Arbeitsschritte gab es Standardarbeitsanweisungen, sogenannte Standard Operating Procedures oder SOPs. Sie legten fest, wie eine Probe genommen, ein Gerät vorbereitet, ein Messwert erfasst und eine Abweichung dokumentiert wird.</p>
+          <p>Eine SOP garantiert kein gewünschtes Ergebnis. Sie reduziert aber Unterschiede, die allein durch eine abweichende Durchführung entstehen. Wenn mehrere Personen denselben Ablauf nach derselben Anweisung durchführen, werden Ergebnisse besser vergleichbar.</p>
+          <p>Wurde ein Zielwert verfehlt, konnten die dokumentierten Daten gezielt geprüft werden:</p>
+          <ul>
+            <li>War die Sauerstoffversorgung über den gesamten Zeitraum ausreichend?</li>
+            <li>Blieb der pH-Wert innerhalb des vorgesehenen Bereichs?</li>
+            <li>Entsprach die Nährstoffzufuhr dem gemessenen Verbrauch?</li>
+            <li>Waren Temperatur und Durchmischung stabil?</li>
+            <li>Wurden Probe, Messung und Dokumentation nach dem festgelegten Verfahren durchgeführt?</li>
+          </ul>
+          <p>Der nächste Versuch begann dadurch nicht wieder bei null. Er konnte einen auffälligen Parameter enger kontrollieren oder eine begründete Änderung prüfen.</p>
+
+          <h2>Softwareprojekte beginnen häufig am falschen Ende</h2>
+          <p>In Softwareprojekten startet die Diskussion oft mit Funktionen: Anmeldung, Rollen, Auswertungen, Benachrichtigungen, Schnittstellen und Automatisierung. Damit wird früh über den späteren Maßstab gesprochen, bevor die zentrale Annahme geprüft ist.</p>
+          <p>Ein sinnvoller Pilot beginnt stattdessen mit einer konkreten Entscheidung:</p>
+          <ol>
+            <li>Welches Problem oder welcher Ablauf soll geprüft werden?</li>
+            <li>Welche Annahme steht dahinter?</li>
+            <li>Welche Daten werden für die Prüfung benötigt?</li>
+            <li>Welche Messgrößen zeigen eine relevante Veränderung?</li>
+            <li>Welche Grenzen gelten für Zeitraum, Standort und Nutzergruppe?</li>
+            <li>Welches Ergebnis rechtfertigt eine Fortsetzung?</li>
+          </ol>
+          <p>Damit wird der Pilot zu einem kontrollierten Praxistest. Er muss noch nicht alle Funktionen eines späteren Produkts enthalten. Er muss genügend Informationen liefern, um über den nächsten Schritt zu entscheiden.</p>
+
+          <h2>Was sich methodisch übertragen lässt</h2>
+          <div class="article-question-list">
+            <div><span>Schüttelkolben</span><strong>Ein kleiner, bewusst begrenzter Ansatz entspricht einem Pilot mit engem Umfang.</strong></div>
+            <div><span>Versuchsbedingungen</span><strong>Definierte Temperatur und Kulturbedingungen entsprechen einem beschriebenen betrieblichen Ablauf.</strong></div>
+            <div><span>Messparameter</span><strong>pH-Wert, optische Dichte oder Zellmasse entsprechen wenigen entscheidungsrelevanten Kennzahlen.</strong></div>
+            <div><span>Technische Grenzen</span><strong>Begrenzter Gasaustausch entspricht klar benannten Grenzen bei Standorten, Nutzern, Daten oder Funktionen.</strong></div>
+            <div><span>SOPs</span><strong>Standardisierte Messverfahren entsprechen einer einheitlichen Erfassung von Daten und Abweichungen.</strong></div>
+            <div><span>Scale-up</span><strong>Die Erweiterung folgt erst nach der Auswertung und bringt zusätzliche Anforderungen an Regelung, Rollen und Technik.</strong></div>
+          </div>
+
+          <h2>Fünf Regeln für belastbare Software-Piloten</h2>
+          <h3>1. Den Umfang bewusst begrenzen</h3>
+          <p>Ein kleiner Umfang ist kein Mangel, solange er zur Prüffrage passt. Wenige Nutzer, ein Standort oder ein ausgewählter Prozess reduzieren Störfaktoren und halten die Auswertung nachvollziehbar.</p>
+
+          <h3>2. Nur entscheidungsrelevante Parameter messen</h3>
+          <p>Mehr Daten bedeuten nicht automatisch mehr Erkenntnis. Erfasst werden sollte, was die Ausgangslage, die Veränderung und mögliche Nebenwirkungen beschreibt.</p>
+
+          <h3>3. Messungen standardisieren</h3>
+          <p>Wenn Nutzer denselben Vorgang unterschiedlich dokumentieren, sind Ergebnisse schwer vergleichbar. Klare Definitionen, Eingaberegeln und Zeitpunkte übernehmen im Pilot eine ähnliche Funktion wie SOPs.</p>
+
+          <h3>4. Abweichungen dokumentieren</h3>
+          <p>Fehlende Daten, ungewöhnliche Verkaufstage, technische Störungen oder Änderungen im Ablauf gehören in die Auswertung. Ohne diesen Kontext kann eine Kennzahl richtig berechnet und trotzdem falsch interpretiert werden.</p>
+
+          <h3>5. Erst nach der Auswertung erweitern</h3>
+          <p>Zusätzliche Funktionen sollten aus bestätigten Anforderungen entstehen. Ein größeres System behebt keine ungeklärte Annahme aus dem kleinen Versuch.</p>
+
+          <h2>Der Bäckerei-Pilot folgt diesem Prinzip</h2>
+          <p>Der aktuelle Bäckerei-Pilot von byte &amp; Handwerk ist auf <strong>vier Wochen, eine Filiale und bis zu 30 Artikel</strong> begrenzt. Er prüft, ob Verkaufs- und Retourendaten die tägliche Mengenentscheidung nachvollziehbar unterstützen können.</p>
+          <p>Erfasst werden nicht nur Retouren. Auch Ausverkäufe und Planungsabweichungen gehören zur Auswertung. Eine geringere Retoure wäre kein Fortschritt, wenn wichtige Artikel dadurch regelmäßig deutlich früher fehlen.</p>
+          <p>Der Pilot verspricht keine vorab festgelegte Verbesserung. Möglich sind mehrere Ergebnisse:</p>
+          <ul>
+            <li>Die Daten zeigen einen relevanten und messbaren Ansatzpunkt.</li>
+            <li>Die Daten reichen für eine belastbare Auswertung noch nicht aus.</li>
+            <li>Ein anderer betrieblicher Ablauf ist wichtiger als die Mengenplanung.</li>
+            <li>Eine technische Entwicklung ist für das geprüfte Problem nicht sinnvoll.</li>
+          </ul>
+          <p>Auch das letzte Ergebnis ist verwertbar. Es verhindert, dass ein Betrieb Zeit und Geld in eine Lösung investiert, deren Nutzen nicht bestätigt wurde.</p>
+
+          <div class="article-callout">
+            <p class="eyebrow">Prüfregel</p>
+            <p><strong>Der Erfolg eines Piloten zeigt sich nicht an der Zahl seiner Funktionen.</strong> Entscheidend ist, ob danach eine bessere und nachvollziehbar begründete Entscheidung möglich ist.</p>
+          </div>
+
+          <h2>Wo die Analogie endet</h2>
+          <p>Ein Software-Pilot ist kein GMP-Prozess. Rechtliche Anforderungen, Risiken und Nachweise unterscheiden sich deutlich. Die Analogie darf deshalb nicht den Eindruck erwecken, ein betrieblicher Praxistest erfülle regulatorische Standards aus der Pharma- oder Biotechnologie.</p>
+          <p>Auch Menschen und betriebliche Abläufe verhalten sich nicht wie eine Zellkultur. Erfahrung, Zeitdruck, Kommunikation und Organisation beeinflussen Entscheidungen. Diese Faktoren lassen sich nicht vollständig kontrollieren.</p>
+          <p>Übertragbar ist die Methode: klein beginnen, Bedingungen festlegen, relevante Werte messen, Abweichungen dokumentieren und erst nach der Auswertung vergrößern.</p>
+
+          <h2>Fazit: Der kleine Versuch soll die nächste Entscheidung verbessern</h2>
+          <p>Der Schüttelkolben war wertvoll, weil seine Möglichkeiten und Grenzen bekannt waren. Er beantwortete eine begrenzte Frage und zeigte, welche Parameter im nächsten Maßstab genauer kontrolliert werden mussten.</p>
+          <p>Ein guter Software-Pilot erfüllt dieselbe Funktion. Er zeigt, ob ein Problem relevant ist, ob die benötigten Daten verfügbar sind, ob eine Veränderung messbar wird und wo die Grenzen des bisherigen Ansatzes liegen.</p>
+          <p>Das Ergebnis kann eine technische Erweiterung, eine Prozessänderung oder ein begründetes Nein sein. In allen drei Fällen hat der Pilot seinen Zweck erfüllt, wenn die Entscheidung danach besser belegt ist.</p>
+
+          <h2>Häufige Fragen zu Software-Piloten und dokumentierten Versuchen</h2>
+          <h3>Was unterscheidet ein Pilotprojekt von einem verkleinerten Endprodukt?</h3>
+          <p>Ein Pilotprojekt bildet nicht alle Funktionen eines späteren Produkts ab. Es begrenzt Umfang, Zeitraum und Messgrößen so, dass eine konkrete Annahme unter realen Bedingungen geprüft werden kann.</p>
+
+          <h3>Warum ist Dokumentation in einem Software-Pilot wichtig?</h3>
+          <p>Dokumentation macht sichtbar, unter welchen Bedingungen ein Ergebnis entstand. Sie hilft, Abweichungen zu erklären, Entscheidungen nachzuvollziehen und den nächsten Versuch gezielter zu planen.</p>
+
+          <h3>Wann sollte ein Pilotprojekt vergrößert werden?</h3>
+          <p>Eine Erweiterung ist sinnvoll, wenn die zentrale Annahme bestätigt wurde, die Daten verlässlich genug sind und vorab festgelegte Entscheidungskriterien erreicht wurden. Mehr Funktionen ersetzen diese Prüfung nicht.</p>
+
+          <h3>Was bedeutet die Analogie zum Scale-up für Softwareentwicklung?</h3>
+          <p>Beim Übergang in einen größeren Maßstab ändern sich Bedingungen und Anforderungen. In Softwareprojekten können zusätzliche Nutzer, Standorte, Datenquellen und Rollen neue Anforderungen erzeugen, die im kleinen Pilot noch nicht sichtbar waren.</p>
+
+          <section aria-labelledby="author-heading-schuettelkolben">
+            <h2 id="author-heading-schuettelkolben">Über den Autor</h2>
+            <p>Dominik Baki ist gelernter Bäcker und App-Entwickler. Dazwischen arbeitete er 17 Jahre in Biotechnologie, Pharma und Life Science unter regulierten Bedingungen. Mit byte &amp; Handwerk überträgt er die methodischen Grundsätze begrenzter, dokumentierter Versuche auf betriebliche Pilotprojekte. <a href="/team/dominik-baki/">Beruflicher Hintergrund und Qualifikationsnachweis →</a></p>
+          </section>
+
+          <section class="article-callout" aria-labelledby="sources-heading-schuettelkolben">
+            <p class="eyebrow">Grundlage und Aktualisierung</p>
+            <h2 id="sources-heading-schuettelkolben">Einordnung dieses Beitrags</h2>
+            <p>Der Beitrag beruht auf der persönlichen Berufserfahrung von Dominik Baki aus 17 Jahren in Biotechnologie, Pharma und Life Science. Die beschriebenen Beispiele zu Schüttelkolben, Bioreaktoren, Messparametern und SOPs erläutern methodische Grundsätze. Sie sind keine Arbeitsanweisung für einen konkreten biotechnologischen oder pharmazeutischen Prozess.</p>
+            <p>Der Transfer auf Softwareentwicklung beschreibt eine Vorgehensweise, keine Gleichsetzung mit GMP-Anforderungen. Zuletzt inhaltlich geprüft am 21. August 2026.</p>
+          </section>
+
+          <section class="share-panel" data-share-panel data-share-title="Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann" data-share-text="Warum ein begrenzter, dokumentierter Versuch eine bessere Grundlage für Softwareentscheidungen schafft." data-share-url="https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt" aria-labelledby="share-heading-schuettelkolben">
+            <p class="eyebrow eyebrow-light">Beitrag weitergeben</p>
+            <h2 id="share-heading-schuettelkolben">Wer plant gerade einen Pilot oder eine Produktentscheidung?</h2>
+            <p>Teilen Sie den Beitrag direkt oder senden Sie den Link an die verantwortliche Person.</p>
+            <div class="share-actions">
+              <a class="share-action share-action-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbyteundhandwerk.de%2Fblog-schuettelkolben-pilotprojekt" target="_blank" rel="noopener noreferrer">Auf LinkedIn teilen</a>
+              <a class="share-action" href="mailto:?subject=Vom%20Sch%C3%BCttelkolben%20zum%20Pilotprojekt&amp;body=Dieser%20Beitrag%20k%C3%B6nnte%20f%C3%BCr%20Sie%20interessant%20sein%3A%0A%0Ahttps%3A%2F%2Fbyteundhandwerk.de%2Fblog-schuettelkolben-pilotprojekt">Per E-Mail teilen</a>
+              <button class="share-action" type="button" data-copy-link>Link kopieren</button>
+              <button class="share-action" type="button" data-native-share hidden>Weitere Optionen</button>
+            </div>
+            <p class="share-status" data-share-status aria-live="polite"></p>
+          </section>
+
+          <div class="article-footer">
+            <a class="text-link" href="/blog-begruendetes-nein">Warum ein begründetes Nein ein gutes Ergebnis sein kann →</a>
+            <a class="text-link" href="/baeckerei-pilot">Bäckerei-Pilot ansehen →</a>
+            <a class="text-link" href="/blog">Alle Beiträge →</a>
+          </div>
+        </div>
+      </article>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Klein beginnen, klar auswerten</p>
+        <h2>Welche Annahme soll Ihr nächster Pilot prüfen?</h2>
+        <p>Im kostenlosen 20-Minuten-Pilot-Check klären wir Problem, Datenlage, Grenzen und den kleinsten sinnvollen nächsten Schritt.</p>
+        <a class="button button-light" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">20-Minuten-Pilot-Check buchen</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk" width="1024" height="159"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a><a href="/agb">AGB</a><a href="https://www.linkedin.com/company/byteundhandwerk" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
+</html>
