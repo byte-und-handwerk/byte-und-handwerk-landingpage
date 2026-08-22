@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kassendaten für Mengenplanung in Bäckereien | byte &amp; Handwerk</title>
+    <meta name="description" content="Welche Kassendaten helfen bei Mengenplanung und Retourenauswertung? Entscheidend sind nicht nur Verkäufe, sondern auch Verfügbarkeit und Retouren.">
+    <meta name="search:keywords" content="Kassendaten Bäckerei, Kassensystem Bäckerei, Kassensystem Schulung, DSFinV-K, Mengenplanung Bäckerei, Produktionsplanung Bäckerei, Verkaufsdaten, Retourenauswertung, Ausverkauf, Daten-Eignungscheck">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="byte &amp; Handwerk">
+    <meta property="og:title" content="Welche Kassendaten braucht eine Bäckerei für Mengenplanung?">
+    <meta property="og:description" content="Die Kasse kennt Verkäufe. Für Mengenplanung müssen zusätzlich Verfügbarkeit, Ausverkäufe und Retouren nachvollziehbar sein.">
+    <meta property="og:url" content="https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei">
+    <meta property="og:image" content="https://byteundhandwerk.de/assets/social-kassendaten-mengenplanung.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kassendaten, Verfügbarkeit und Retouren als Grundlage der Mengenplanung">
+    <meta property="article:author" content="Dominik Baki">
+    <meta property="article:section" content="Bäckerhandwerk">
+    <meta property="article:published_time" content="2026-08-22">
+    <meta property="article:modified_time" content="2026-08-22">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Welche Kassendaten braucht eine Bäckerei für Mengenplanung?">
+    <meta name="twitter:description" content="Welche Verkaufs-, Verfügbarkeits- und Retourendaten für belastbare Mengenentscheidungen benötigt werden.">
+    <meta name="twitter:image" content="https://byteundhandwerk.de/assets/social-kassendaten-mengenplanung.png">
+    <meta name="twitter:image:alt" content="Kassendaten, Verfügbarkeit und Retouren als Grundlage der Mengenplanung">
+    <meta name="theme-color" content="#172126">
+    <link rel="canonical" href="https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="byte &amp; Handwerk Praxiswissen" href="feed.xml">
+    <link rel="stylesheet" href="assets/styles.css?v=20260815-1">
+    <link rel="dns-prefetch" href="//app.usercentrics.eu">
+    <link rel="dns-prefetch" href="//api.usercentrics.eu">
+    <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
+    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
+    <script id="usercentrics-cmp" data-eu-mode="true" data-settings-id="vC1A9YPEa2XgYq" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js" async></script>
+    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <script type="text/plain" data-usercentrics="Google Analytics 4" async src="https://www.googletagmanager.com/gtag/js?id=G-72ZE2LZPZM"></script>
+    <script type="text/plain" data-usercentrics="Google Analytics 4" src="assets/analytics.js?v=20260809-2"></script>
+    <script src="assets/site.js?v=20260806-2" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Welche Kassendaten braucht eine Bäckerei für Mengenplanung und Retourenauswertung?",
+            "description": "Welche Verkaufs-, Verfügbarkeits- und Retourendaten Bäckereien für belastbare Mengenentscheidungen benötigen.",
+            "datePublished": "2026-08-22",
+            "dateModified": "2026-08-22",
+            "image": "https://byteundhandwerk.de/assets/social-kassendaten-mengenplanung.png",
+            "author": {
+              "@type": "Person",
+              "name": "Dominik Baki",
+              "url": "https://byteundhandwerk.de/team/dominik-baki/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "byte & Handwerk",
+              "url": "https://byteundhandwerk.de/"
+            },
+            "mainEntityOfPage": "https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei",
+            "isPartOf": "https://byteundhandwerk.de/blog",
+            "isAccessibleForFree": true,
+            "about": ["Kassendaten", "Mengenplanung Bäckerei", "Retourenauswertung", "Ausverkäufe", "DSFinV-K", "Daten-Eignungscheck"],
+            "citation": [
+              "https://ao.bundesfinanzministerium.de/ao/2025/Abgabenordnung/Vierter-Teil/Zweiter-Abschnitt/Erster-Unterabschnitt/Paragraf-146a/inhalt.html",
+              "https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-steuergerechtigkeit-belegpflicht.html",
+              "https://www.destatis.de/DE/Service/EXSTAT/Datensaetze/auswertung-scannerdaten.html",
+              "https://www.normenkontrollrat-bw.de/fileadmin/_normenkontrollrat/PDFs/Empfehlungsberichte_und_Positionspapiere/Baeckereistudie_NKR_BW.pdf",
+              "https://kmz-kassensystem.de/kassenloesungen/kassensysteme/copago-baeckerei/",
+              "https://support.korona.de/retouren-warenwirtschaft/",
+              "https://canopos.de/"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Werden personenbezogene Kundendaten benötigt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein. Für Mengenplanung und Retourenauswertung reichen artikel-, filial- und tagesbezogene Betriebsdaten. Namen oder Kontaktdaten von Kundinnen und Kunden werden dafür nicht benötigt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Sind Verkaufszahlen allein ausreichend?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein. Verkaufszahlen müssen mindestens mit Verfügbarkeit, Retouren und möglichen Ausverkäufen verbunden werden. Andernfalls bleibt unklar, warum eine bestimmte Menge verkauft wurde."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Muss das Kassensystem ausgetauscht werden?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nicht vor der Datenprüfung. Neuere Kassensysteme oder aktuelle Softwareversionen können Verkaufs-, Warenwirtschafts-, Retouren- und Verfügbarkeitsdaten bereits gemeinsam erfassen. Wenn vorhandene Planungs- oder Prognosefunktionen zuverlässig genutzt werden und die betrieblichen Zielwerte erreicht werden, ist keine zusätzliche Lösung erforderlich."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Storno und Retoure?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ein Storno korrigiert einen Kassenvorgang. Eine Retoure im Bäckereibetrieb bezeichnet häufig unverkaufte oder abgeschriebene Ware. Beide Werte beschreiben unterschiedliche Vorgänge."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Kann aus Kassendaten automatisch eine Bestellmenge berechnet werden?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Technisch sind Berechnungen möglich. Ob das Ergebnis betrieblich sinnvoll ist, hängt von Datenqualität, Verfügbarkeit, Sortiment, Verkaufstag und dokumentierten Abweichungen ab."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Startseite",
+                "item": "https://byteundhandwerk.de/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://byteundhandwerk.de/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kassendaten für Mengenplanung",
+                "item": "https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="byte &amp; Handwerk Startseite"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk" width="1024" height="159"></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog" aria-current="page">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a></nav>
+      <a class="button button-small" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">Pilot-Check buchen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog" aria-current="page">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a></nav>
+
+    <main id="main-content">
+      <header class="article-hero">
+        <div>
+          <p class="eyebrow">Kassendaten · Mengenplanung · Retouren</p>
+          <h1>Welche Kassendaten braucht eine Bäckerei wirklich?</h1>
+          <p class="subpage-lead">Ein Kassensystem zeigt, was verkauft wurde. Für eine belastbare Mengenentscheidung müssen zusätzlich Verfügbarkeit, Ausverkäufe und Retouren nachvollziehbar sein.</p>
+          <div class="article-meta"><span>Von Dominik Baki</span><time datetime="2026-08-22">22. August 2026</time><span>7 Minuten Lesezeit</span><span>Geprüft: 22. August 2026</span></div>
+        </div>
+      </header>
+
+      <article class="article-main">
+        <div class="article-content">
+          <p class="article-intro">Viele Bäckereien erfassen bereits täglich, welcher Artikel zu welchem Preis und in welcher Menge verkauft wurde. Die entscheidende Frage ist deshalb häufig nicht, ob Daten vorhanden sind, sondern ob sie vollständig, einheitlich und regelmäßig auswertbar vorliegen.</p>
+
+          <h2>Drei Datenbereiche entscheiden über die Aussage</h2>
+          <p>Für eine belastbare Mengenplanung werden mindestens drei Datenbereiche benötigt:</p>
+          <ul>
+            <li><strong>Verkauf:</strong> Was wurde wann und in welcher Filiale verkauft?</li>
+            <li><strong>Verfügbarkeit:</strong> Welche Menge war tatsächlich vorhanden?</li>
+            <li><strong>Ergebnis:</strong> Was blieb übrig, wurde abgeschrieben oder war vorzeitig ausverkauft?</li>
+          </ul>
+          <p>Der Datenbestand an der Kasse ist damit ein wichtiger Ausgangspunkt. Er bildet den tatsächlichen Bedarf aber nicht automatisch vollständig ab.</p>
+
+          <h2>Was ein elektronisches Kassensystem bereits erfasst</h2>
+          <p>Elektronische Kassensysteme dokumentieren einzelne Verkaufsvorgänge. Zu den strukturierten Kassendaten gehören grundsätzlich Angaben wie Artikelbezeichnung, Menge und Einzelpreis. Für eine erste Auswertung sind insbesondere folgende Felder relevant:</p>
+          <ul>
+            <li>Datum und Uhrzeit des Verkaufs</li>
+            <li>Filiale oder Kassenplatz</li>
+            <li>eindeutige Artikelnummer</li>
+            <li>Artikelbezeichnung</li>
+            <li>verkaufte Menge</li>
+            <li>Verkaufspreis und Rabatte</li>
+            <li>Stornierungen und Rückerstattungen</li>
+          </ul>
+          <p>Neuere Kassensysteme oder aktuelle Softwareversionen können darüber hinaus Funktionen für Warenwirtschaft, Produktionsmengen, Lieferungen, Abschriften, Retouren oder Bestandsverläufe enthalten. Die Daten können direkt in der Kasse, im Kassen-Backoffice, in einer angebundenen Warenwirtschaft oder in einer separaten Bäckereisoftware liegen.</p>
+          <p>Welche Angaben tatsächlich erfasst und exportiert werden können, hängt vom Anbieter, der Softwareversion, den freigeschalteten Modulen, der Systemkonfiguration und der betrieblichen Nutzung ab.</p>
+          <p>Diese Daten können zeigen, wie sich der Verkauf eines Artikels über den Tag, verschiedene Wochentage oder mehrere Filialen entwickelt. Das ist eine gute Ausgangslage. Es ist aber noch keine vollständige Grundlage für die Produktions- oder Bestellplanung.</p>
+
+          <div class="article-callout">
+            <p class="eyebrow">Entscheidender Unterschied</p>
+            <p><strong>Die Kasse kennt mindestens den Verkauf.</strong> Ob sie auch verfügbare Mengen, Ausverkaufszeitpunkte und unverkaufte Ware abbildet, muss für das konkrete System und den eingesetzten Softwarestand geprüft werden.</p>
+          </div>
+
+          <h2>Verkaufte Menge ist nicht gleich tatsächlicher Bedarf</h2>
+          <p>Eine geringe Verkaufsmenge kann unterschiedliche Ursachen haben. Ein Artikel könnte wenig nachgefragt, nur in geringer Menge vorhanden, früh ausverkauft oder verspätet nachgeliefert worden sein. Auch wechselnde Artikelnummern oder Ersatzartikel können das Bild verändern.</p>
+          <p>Ein Beispiel: Von einem Brot wurden an einem Dienstag 18 Stück verkauft. Die Zahl sagt nicht, ob 18 Stück angeboten und vollständig verkauft wurden oder ob 30 Stück vorhanden waren und 12 zurückkamen. Für die nächste Mengenentscheidung wären das zwei gegensätzliche Ergebnisse.</p>
+
+          <h2>Welche zusätzlichen Daten benötigt werden</h2>
+
+          <h3>Geplante Menge</h3>
+          <p>Wie viele Stück waren für den Verkaufstag vorgesehen? Die geplante Menge bildet die ursprüngliche Entscheidung ab. Ohne sie lässt sich später nicht beurteilen, wie stark Planung und Ergebnis voneinander abwichen.</p>
+
+          <h3>Gelieferte oder produzierte Menge</h3>
+          <p>Wie viele Stück wurden tatsächlich produziert oder an die Filiale geliefert? Produktionsabweichungen, Fehlmengen oder Änderungen bei der Verteilung können dazu führen, dass die geplante Menge nicht vollständig verfügbar war.</p>
+
+          <h3>Nachlieferungen und Umlagerungen</h3>
+          <p>Wurde während des Verkaufstages Ware nachgeliefert oder zwischen Filialen verschoben? Ohne diese Information könnte eine Filiale scheinbar mehr verkaufen, obwohl sie zusätzliche Ware erhalten hat.</p>
+
+          <h3>Retouren und Abschriften</h3>
+          <p>Welche Menge blieb am Tagesende übrig oder musste aus anderen Gründen abgeschrieben werden? Wenn möglich, sollte zwischen nicht verkaufter Ware, Qualitätsabweichung, Beschädigung, falscher Lieferung und anderweitiger Verwendung unterschieden werden.</p>
+          <p>Ein Storno an der Kasse ist nicht dasselbe wie eine Retoure unverkaufter Backwaren. Beide Vorgänge müssen getrennt betrachtet werden.</p>
+
+          <h3>Ausverkaufszeitpunkt</h3>
+          <p>Wann war ein Artikel nicht mehr verfügbar? Ohne diesen Zeitpunkt kann eine niedrige Verkaufszahl fälschlich als geringe Nachfrage interpretiert werden. Ein früher Ausverkauf ist deshalb ebenso wichtig wie eine hohe Retoure.</p>
+          <p>Ein angezeigter aktueller Bestand belegt den Ausverkaufszeitpunkt nicht automatisch. Der Zeitpunkt lässt sich nur direkt erfassen oder belastbar ableiten, wenn Zugänge, Verkäufe, Umlagerungen und Abschriften vollständig sowie zeitlich nachvollziehbar dokumentiert werden.</p>
+
+          <h2>Welche Rolle der Preis spielt</h2>
+          <p>Der Verkaufspreis gehört zu den Kassendaten. Für die reine Mengenplanung steht zunächst die Stückzahl im Vordergrund. Der Preis wird relevant, wenn unterschiedliche Preise, Rabatte, Aktionsangebote oder vergünstigte Restware den Absatz beeinflussen.</p>
+          <p>Zusätzlich hilft der Preis, die wirtschaftliche Bedeutung einer Abweichung einzuordnen. Zehn zurückgekommene Artikel können je nach Wareneinsatz und Verkaufspreis sehr unterschiedliche Folgen haben.</p>
+
+          <h2>Fünf typische Probleme bei Kassendaten</h2>
+          <div class="article-question-list">
+            <div><span>01 · Artikel</span><strong>Wechselnde Nummern oder Bezeichnungen trennen zusammengehörige Verkaufsreihen.</strong></div>
+            <div><span>02 · Sammelartikel</span><strong>Ein Eintrag wie „Brötchen gemischt“ verdeckt den Verkauf einzelner Sorten.</strong></div>
+            <div><span>03 · Filialen</span><strong>Unterschiedliche Buchungsweisen erschweren den Vergleich von Retouren, Rabatten und Ersatzartikeln.</strong></div>
+            <div><span>04 · Export</span><strong>Gespeicherte Daten sind nicht automatisch in einem regelmäßig nutzbaren Format verfügbar.</strong></div>
+            <div><span>05 · Nullwerte</span><strong>Kein Verkauf kann fehlende Nachfrage, fehlende Ware oder eine falsche Zuordnung bedeuten.</strong></div>
+          </div>
+
+          <h2>Reicht ein DSFinV-K-Export aus?</h2>
+          <p>Die DSFinV-K ist die digitale Schnittstelle der Finanzverwaltung für Kassensysteme. Sie strukturiert Kassendaten für steuerliche Prüfungen. Ein solcher Export kann deshalb einen nützlichen Ausgangspunkt bilden.</p>
+          <p>Er wurde jedoch nicht speziell für Produktionsplanung und Retourenauswertung entwickelt. Vor der Nutzung muss geprüft werden, welche Zeiträume enthalten sind, ob Artikel und Filialen eindeutig zugeordnet werden können und wie Retouren außerhalb der Kasse dokumentiert werden.</p>
+          <p>Ein technisch korrekter Kassendatenexport ist noch keine fertige Planungsgrundlage.</p>
+
+          <h2>Braucht eine Bäckerei dafür ein neues Kassensystem?</h2>
+          <p>Nicht zwangsläufig. Der erste Schritt sollte nicht der Austausch der vorhandenen Kasse sein. Zunächst muss geklärt werden, welche Daten bereits vorhanden sind und welche Informationen außerhalb des Kassensystems dokumentiert werden.</p>
+          <p>Bei neueren Systemen oder nach einem Softwareupdate können die benötigten Angaben bereits im Kassensystem, in einer angebundenen Warenwirtschaft oder über vorhandene Schnittstellen verfügbar sein. Dann geht es nicht um zusätzliche Software, sondern um die richtige Konfiguration, eine konsequente Erfassung und einen nutzbaren Export.</p>
+          <p>Wenn vorhandene Planungs- oder Prognosefunktionen zuverlässig genutzt werden, die betrieblichen Zielwerte erreicht werden und kein relevanter manueller Zusatzaufwand verbleibt, ist weder eine zusätzliche Lösung noch ein Pilot erforderlich.</p>
+          <p>Möglicherweise reicht eine Kombination aus vorhandenem Kassendatenexport, Produktions- oder Lieferliste, Retourenerfassung, dokumentierten Ausverkäufen und einheitlichen Artikelnummern. Erst wenn diese Prüfung konkrete Lücken zeigt, lässt sich eine zusätzliche Erfassung oder technische Anpassung begründen.</p>
+
+          <h2>Zwölf Fragen für den Daten-Eignungscheck</h2>
+          <ol>
+            <li>Welches Kassensystem, welche Softwareversion und welche freigeschalteten Module werden eingesetzt?</li>
+            <li>Welche Planungs- oder Bestellvorschläge erzeugt das bestehende System, wie häufig werden sie manuell korrigiert und wie wird ihre Wirkung bewertet?</li>
+            <li>Welche Verkaufs-, Bestands-, Retouren- und Planungsdaten stellt die vorhandene Systemlandschaft bereit?</li>
+            <li>In welchem Format können sie exportiert werden?</li>
+            <li>Sind Artikelnummern über den Prüfzeitraum einheitlich?</li>
+            <li>Lassen sich Filialen, Tage und Uhrzeiten unterscheiden?</li>
+            <li>Wie werden geplante und gelieferte Mengen dokumentiert?</li>
+            <li>Wo werden Retouren und Abschriften erfasst?</li>
+            <li>Können Ausverkäufe oder Verfügbarkeitslücken erkannt werden?</li>
+            <li>Enthalten die Daten ausreichend vergleichbare Verkaufstage?</li>
+            <li>Enthält der Export personenbezogene oder nicht benötigte Angaben?</li>
+            <li>Reicht die Datenqualität für einen begrenzten Pilot?</li>
+          </ol>
+          <p>Das Ergebnis kann auch sein, dass ein Pilot noch nicht sinnvoll ist. Dann sollte zuerst die Erfassung vereinheitlicht oder eine fehlende Information ergänzt werden.</p>
+
+          <h2>Vom Kassendatenbestand zur Mengenentscheidung</h2>
+          <p>Vorhandene Kassendaten können einen wichtigen Teil der täglichen Nachfrage sichtbar machen. Ihr Nutzen entsteht aber erst durch den Vergleich mit Planung, Verfügbarkeit, Ausverkäufen und Retouren.</p>
+          <div class="article-callout">
+            <p class="eyebrow">Prüfkette</p>
+            <p><strong>Geplante Menge → verfügbare Menge → verkaufte Menge → Ausverkauf oder Retoure</strong></p>
+          </div>
+          <p>Erst diese Kette zeigt, ob eine Mengenentscheidung zu hoch, zu niedrig oder unter den gegebenen Bedingungen angemessen war.</p>
+
+          <h2>Fazit: Vorhandene Daten zuerst auf Eignung prüfen</h2>
+          <p>Viele Bäckereien müssen für eine erste Datenprüfung nicht bei null beginnen. Elektronische Kassensysteme enthalten häufig bereits Artikel-, Mengen- und Verkaufsdaten.</p>
+          <p>Die eigentliche Arbeit liegt in der Einordnung: Sind die Daten exportierbar? Sind Artikel und Filialen eindeutig? Werden Retouren getrennt dokumentiert? Können Ausverkäufe erkannt werden? Lassen sich Planung und Ergebnis miteinander vergleichen?</p>
+          <p>Der Besitz eines Kassensystems beantwortet diese Fragen nicht automatisch. Er bietet aber häufig eine Grundlage, die vor einer neuen Softwareentwicklung geprüft werden sollte. Wenn die bestehende Planung bereits zuverlässig funktioniert, ist kein zusätzlicher Pilot notwendig.</p>
+
+          <h2>Häufige Fragen zu Kassendaten in Bäckereien</h2>
+          <h3>Werden personenbezogene Kundendaten benötigt?</h3>
+          <p>Nein. Für Mengenplanung und Retourenauswertung reichen artikel-, filial- und tagesbezogene Betriebsdaten. Namen oder Kontaktdaten von Kundinnen und Kunden werden dafür nicht benötigt.</p>
+
+          <h3>Sind Verkaufszahlen allein ausreichend?</h3>
+          <p>Nein. Verkaufszahlen müssen mindestens mit Verfügbarkeit, Retouren und möglichen Ausverkäufen verbunden werden. Andernfalls bleibt unklar, warum eine bestimmte Menge verkauft wurde.</p>
+
+          <h3>Muss das Kassensystem ausgetauscht werden?</h3>
+          <p>Nicht vor der Datenprüfung. Neuere Kassensysteme oder aktuelle Softwareversionen können Verkaufs-, Warenwirtschafts-, Retouren- und Verfügbarkeitsdaten bereits gemeinsam erfassen. Wenn vorhandene Planungs- oder Prognosefunktionen zuverlässig genutzt werden und die betrieblichen Zielwerte erreicht werden, ist keine zusätzliche Lösung erforderlich.</p>
+
+          <h3>Was ist der Unterschied zwischen Storno und Retoure?</h3>
+          <p>Ein Storno korrigiert einen Kassenvorgang. Eine Retoure im Bäckereibetrieb bezeichnet häufig unverkaufte oder abgeschriebene Ware. Beide Werte beschreiben unterschiedliche Vorgänge.</p>
+
+          <h3>Kann aus Kassendaten automatisch eine Bestellmenge berechnet werden?</h3>
+          <p>Technisch sind Berechnungen möglich. Ob das Ergebnis betrieblich sinnvoll ist, hängt von Datenqualität, Verfügbarkeit, Sortiment, Verkaufstag und dokumentierten Abweichungen ab. Eine automatische Empfehlung sollte deshalb erst nach einer begrenzten Prüfung eingesetzt werden.</p>
+
+          <section aria-labelledby="author-heading-kassendaten">
+            <h2 id="author-heading-kassendaten">Über den Autor</h2>
+            <p>Dominik Baki ist gelernter Bäcker, App-Entwickler und Gründer von byte &amp; Handwerk. Er prüft betriebliche Abläufe und vorhandene Daten, bevor eine technische Lösung oder ein Pilot entwickelt wird. <a href="/team/dominik-baki/">Beruflicher Hintergrund und Qualifikationsnachweis →</a></p>
+          </section>
+
+          <section class="article-callout" aria-labelledby="sources-heading-kassendaten">
+            <p class="eyebrow">Quellen und Aktualisierung</p>
+            <h2 id="sources-heading-kassendaten">Grundlage dieses Beitrags</h2>
+            <p>Die Einordnung strukturierter Kassendaten und der DSFinV-K basiert auf den <a href="https://ao.bundesfinanzministerium.de/ao/2025/Abgabenordnung/Vierter-Teil/Zweiter-Abschnitt/Erster-Unterabschnitt/Paragraf-146a/inhalt.html" target="_blank" rel="noopener noreferrer">Anwendungshinweisen des Bundesfinanzministeriums zu § 146a AO</a> und den <a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-steuergerechtigkeit-belegpflicht.html" target="_blank" rel="noopener noreferrer">Fragen und Antworten zum Kassengesetz</a>.</p>
+            <p>Die Beschreibung von Kassendaten als digitale Transaktionsdaten über Umsatz, Absatz und verkaufte Artikel orientiert sich an der <a href="https://www.destatis.de/DE/Service/EXSTAT/Datensaetze/auswertung-scannerdaten.html" target="_blank" rel="noopener noreferrer">Einordnung von Scannerdaten durch das Statistische Bundesamt</a>. Die <a href="https://www.normenkontrollrat-bw.de/fileadmin/_normenkontrollrat/PDFs/Empfehlungsberichte_und_Positionspapiere/Baeckereistudie_NKR_BW.pdf" target="_blank" rel="noopener noreferrer">Untersuchung des Normenkontrollrats Baden-Württemberg</a> dokumentiert den Modernisierungs- und Kostenaufwand bei Kassensystemen im Bäckerhandwerk, belegt aber keine allgemeine Nutzungsquote.</p>
+            <p>Dass aktuelle Branchenlösungen über den reinen Verkauf hinausgehen können, zeigen beispielhaft die Herstellerangaben zu <a href="https://kmz-kassensystem.de/kassenloesungen/kassensysteme/copago-baeckerei/" target="_blank" rel="noopener noreferrer">copago von KMZ</a>, zur <a href="https://support.korona.de/retouren-warenwirtschaft/" target="_blank" rel="noopener noreferrer">Retouren- und Warenwirtschaft in KORONA.pos</a> und zu den <a href="https://canopos.de/" target="_blank" rel="noopener noreferrer">Bäckereifunktionen von cano.POS</a>. Die Beispiele belegen mögliche Funktionen, nicht deren Verfügbarkeit in jeder Installation. Entscheidend bleiben Softwareversion, gebuchte Module, Konfiguration und tatsächliche Nutzung.</p>
+            <p>Der Beitrag beschreibt fachliche und technische Prüfkriterien. Er ersetzt keine steuerliche oder rechtliche Beratung. Zuletzt inhaltlich geprüft am 22. August 2026.</p>
+          </section>
+
+          <section class="share-panel" data-share-panel data-share-title="Welche Kassendaten braucht eine Bäckerei für Mengenplanung und Retourenauswertung?" data-share-text="Welche Verkaufs-, Verfügbarkeits- und Retourendaten für belastbare Mengenentscheidungen benötigt werden." data-share-url="https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei" aria-labelledby="share-heading-kassendaten">
+            <p class="eyebrow eyebrow-light">Beitrag weitergeben</p>
+            <h2 id="share-heading-kassendaten">Wer prüft gerade Kassendaten oder Mengenplanung?</h2>
+            <p>Teilen Sie den Beitrag direkt oder senden Sie den Link an die verantwortliche Person.</p>
+            <div class="share-actions">
+              <a class="share-action share-action-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbyteundhandwerk.de%2Fblog-kassendaten-mengenplanung-baeckerei" target="_blank" rel="noopener noreferrer">Auf LinkedIn teilen</a>
+              <a class="share-action" href="mailto:?subject=Welche%20Kassendaten%20braucht%20eine%20B%C3%A4ckerei%20f%C3%BCr%20Mengenplanung%3F&amp;body=Dieser%20Beitrag%20k%C3%B6nnte%20f%C3%BCr%20Sie%20interessant%20sein%3A%0A%0Ahttps%3A%2F%2Fbyteundhandwerk.de%2Fblog-kassendaten-mengenplanung-baeckerei">Per E-Mail teilen</a>
+              <button class="share-action" type="button" data-copy-link>Link kopieren</button>
+              <button class="share-action" type="button" data-native-share hidden>Weitere Optionen</button>
+            </div>
+            <p class="share-status" data-share-status aria-live="polite"></p>
+          </section>
+
+          <div class="article-footer">
+            <a class="text-link" href="/baeckerei-pilot#daten-eignungscheck">Daten-Eignungscheck ansehen →</a>
+            <a class="text-link" href="/blog-baeckerei-insolvenzen-2026">Beeinflussbare Kosten im Bäckerhandwerk →</a>
+            <a class="text-link" href="/blog">Alle Beiträge →</a>
+          </div>
+        </div>
+      </article>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Vor dem Vier-Wochen-Pilot</p>
+        <h2>Reichen Ihre vorhandenen Daten für einen belastbaren Vergleich?</h2>
+        <p>Der Daten-Eignungscheck prüft Datenlage, Exportformat und Artikelstruktur. Er kostet 390 Euro und wird bei einer anschließenden Pilotbeauftragung vollständig angerechnet.</p>
+        <a class="button button-light" href="/baeckerei-pilot#daten-eignungscheck">Daten-Eignungscheck ansehen</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="byte-undhandwerk-logo.png" alt="byte &amp; Handwerk" width="1024" height="159"><p>Digitale Lösungen für das Lebensmittelhandwerk.</p></div>
+      <div class="footer-contact"><strong>Dominik Baki</strong><span>Alsenweg 64 · 68305 Mannheim</span><a href="tel:+4962143755044">0621 437 550 44</a><a href="mailto:dominik.baki@byteundhandwerk.de">dominik.baki@byteundhandwerk.de</a></div>
+      <div class="footer-links"><a href="/">Startseite</a><a href="/mission">Mission</a><a href="/referenz-revierhege">Referenzprojekt</a><a href="/blog">Blog</a><a href="/baeckerei-pilot">Bäckerei-Pilot</a><a href="/team/dominik-baki/">Team</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a><a href="/agb">AGB</a><a href="https://www.linkedin.com/company/byteundhandwerk" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> byte &amp; Handwerk.</div>
+    </footer>
+  </body>
+</html>
