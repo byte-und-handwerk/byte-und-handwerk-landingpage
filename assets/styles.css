@@ -706,6 +706,29 @@ p {
   margin-top: 32px;
 }
 
+.offer-list {
+  display: grid;
+  gap: 12px;
+  margin: 28px 0 0;
+  padding: 0;
+  color: var(--ink-soft);
+  list-style: none;
+}
+
+.offer-list li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.offer-list li::before {
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  color: var(--clay);
+  content: "✓";
+  font-weight: 800;
+}
+
 .focus-facts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
