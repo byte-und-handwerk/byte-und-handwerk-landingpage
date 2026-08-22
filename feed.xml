@@ -5,8 +5,16 @@
     <link>https://byteundhandwerk.de/blog</link>
     <description>Praxisnahe Beiträge über Produktvalidierung, digitale Piloten und technische Verantwortung.</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 15 Aug 2026 09:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 09:00:00 +0200</lastBuildDate>
     <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann</title>
+      <link>https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt</guid>
+      <pubDate>Fri, 21 Aug 2026 09:00:00 +0200</pubDate>
+      <category>Prozessvalidierung</category>
+      <description>Was Software-Pilotprojekte von begrenzten Versuchen, dokumentierten Messgrößen, SOPs und der kontrollierten Übertragung in einen größeren Maßstab lernen können.</description>
+    </item>
     <item>
       <title>Bäckerei-Insolvenzen 2026: Welche Kosten Betriebe selbst beeinflussen können</title>
       <link>https://byteundhandwerk.de/blog-baeckerei-insolvenzen-2026</link>
