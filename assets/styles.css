@@ -518,6 +518,15 @@ p {
   color: rgba(255, 255, 255, 0.64);
 }
 
+/* Der Einleitungssatz einer Abschnittsueberschrift wird weiter unten mit
+   `.section-heading > p:last-child` auf `--muted` gesetzt - dunkle Tinte.
+   Diese Regel hat die hoehere Spezifitaet (0,2,1 gegen 0,2,0) und gewinnt
+   auch auf dunklem Grund. Ergebnis war unsichtbarer Text auf /blog,
+   /referenz-revierhege, /search und /mission. */
+.section-dark .section-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.64);
+}
+
 .section-heading {
   max-width: 900px;
 }
