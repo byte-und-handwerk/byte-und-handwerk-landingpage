@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://byteundhandwerk.de/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/mission</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://byteundhandwerk.de/team/dominik-baki/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/referenz-revierhege</loc>
@@ -19,6 +19,14 @@
   <url>
     <loc>https://byteundhandwerk.de/blog</loc>
     <lastmod>2026-08-22</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/blog-produktionsplanung-baeckerei</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/blog-digitalisierung-handwerk</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei</loc>
@@ -42,7 +50,11 @@
   </url>
   <url>
     <loc>https://byteundhandwerk.de/baeckerei-pilot</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/treuebiss</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://byteundhandwerk.de/search</loc>
@@ -51,5 +63,17 @@
   <url>
     <loc>https://byteundhandwerk.de/datenschutz-direktwerbung</loc>
     <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/impressum</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/datenschutz</loc>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://byteundhandwerk.de/agb</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
 </urlset>

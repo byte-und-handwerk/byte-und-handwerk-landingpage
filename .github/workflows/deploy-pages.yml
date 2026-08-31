@@ -33,6 +33,9 @@ jobs:
       - name: Validate clean URLs
         run: node scripts/validate-clean-urls.mjs
 
+      - name: Validate shared markup
+        run: node scripts/validate-consistency.mjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 

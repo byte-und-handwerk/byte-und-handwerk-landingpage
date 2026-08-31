@@ -7,6 +7,7 @@ const corePages = [
   "index.html",
   "mission.html",
   "baeckerei-pilot.html",
+  "treuebiss.html",
   "referenz-revierhege.html",
   "blog.html",
   "team/dominik-baki/index.html",
