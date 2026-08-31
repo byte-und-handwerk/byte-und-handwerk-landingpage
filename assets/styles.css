@@ -1327,6 +1327,27 @@ p {
   color: var(--ink);
 }
 
+.article-figure {
+  margin: 0 0 72px;
+}
+
+.article-figure img {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+}
+
+.article-figure figcaption {
+  max-width: 640px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
 .article-hero h1,
 .article-content h2,
 .article-content h3,
