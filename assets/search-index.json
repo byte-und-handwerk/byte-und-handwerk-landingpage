@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-31T11:36:42.273Z",
+  "generatedAt": "2026-08-31T11:48:43.197Z",
   "documents": [
     {
       "id": "index",
@@ -131,7 +131,7 @@
     {
       "id": "blog-begruendetes-nein",
       "type": "Beitrag",
-      "title": "Warum ein begründetes Nein ein gutes Projektergebnis sein kann",
+      "title": "Ein begründetes Nein als Projektergebnis",
       "description": "RevierHege zeigt: Ein funktionierender Pilot kann einen konkreten Nutzen bestätigen und trotzdem gegen eine kommerzielle Weiterentwicklung sprechen.",
       "url": "https://byteundhandwerk.de/blog-begruendetes-nein",
       "publishedAt": "2026-08-06",
@@ -294,7 +294,7 @@
     {
       "id": "blog",
       "type": "Seite",
-      "title": "Praxiswissen für Bäckereien: Retouren, Daten, Piloten",
+      "title": "Bäckerei-Blog: Retouren, Daten und Piloten",
       "description": "Beiträge zu Retouren, Kassendaten, Mengenplanung und begrenzten Piloten für Bäckereien, die vor einer Softwareentscheidung ihre eigenen Zahlen kennen wollen.",
       "url": "https://byteundhandwerk.de/blog",
       "publishedAt": "",
@@ -435,7 +435,7 @@
     {
       "id": "treuebiss",
       "type": "Seite",
-      "title": "TreueBiss: digitale Stempelkarte für das Lebensmittelhandwerk",
+      "title": "TreueBiss: Stempelkarte für Bäckereien",
       "description": "TreueBiss ist eine digitale Stempelkarte für Bäckereien, Metzgereien, Hofläden und Feinkost. Stempel entstehen nur gegen Kaufnachweis. Erst ein begrenzter Praxis-Zeitraum, dann die Entscheidung über den Weiterbetrieb.",
       "url": "https://byteundhandwerk.de/treuebiss",
       "publishedAt": "",
