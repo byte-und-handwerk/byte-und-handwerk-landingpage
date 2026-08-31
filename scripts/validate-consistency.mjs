@@ -31,6 +31,19 @@ const canonicalFooter = [
   ["/agb", "AGB"],
 ];
 
+/* The header navigation, identical on every page. Page-local anchors are
+   deliberately absent: on 2026-08-31 the home page carried three of them
+   (Haltung, Arbeitsweise, Schwerpunkte) and had, as a result, no room left
+   for either of the two pages the site actually sells. Wayfinding inside a
+   long page belongs to that page, not to the site navigation. */
+const canonicalNavigation = [
+  "/baeckerei-pilot",
+  "/treuebiss",
+  "/referenz-revierhege",
+  "/blog",
+  "/mission",
+];
+
 /* Deliberate exceptions, listed here so they are a decision and not an
    accident. Key is the file, value the extra link it may carry. */
 const footerExceptions = new Map([
@@ -115,6 +128,19 @@ for (const absolutePath of files) {
   const unexpected = actual.filter((href) => !expected.includes(href));
   if (missing.length) errors.push(`${relativePath}: footer is missing ${missing.join(", ")}`);
   if (unexpected.length) errors.push(`${relativePath}: footer carries unexpected ${unexpected.join(", ")}`);
+
+  for (const [name, pattern] of [
+    ["desktop navigation", /<nav class="desktop-nav"[\s\S]*?<\/nav>/],
+    ["mobile navigation", /<nav class="mobile-nav"[\s\S]*?<\/nav>/],
+  ]) {
+    const actualNavigation = links(block(content, pattern));
+    const anchors = actualNavigation.filter((href) => href.startsWith("#"));
+    if (anchors.length) errors.push(`${relativePath}: ${name} carries page anchors ${anchors.join(", ")}`);
+    const missingLinks = canonicalNavigation.filter((href) => !actualNavigation.includes(href));
+    const extraLinks = actualNavigation.filter((href) => !canonicalNavigation.includes(href));
+    if (missingLinks.length) errors.push(`${relativePath}: ${name} is missing ${missingLinks.join(", ")}`);
+    if (extraLinks.length) errors.push(`${relativePath}: ${name} carries unexpected ${extraLinks.join(", ")}`);
+  }
 
   for (const [name, pattern] of [
     ["desktop navigation", /<nav class="desktop-nav"[\s\S]*?<\/nav>/],
