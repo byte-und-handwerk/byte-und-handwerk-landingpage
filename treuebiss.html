@@ -28,7 +28,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="assets/styles.css?v=20260902-1">
+    <link rel="stylesheet" href="assets/styles.css?v=20260902-2">
     <link rel="dns-prefetch" href="//app.usercentrics.eu">
     <link rel="dns-prefetch" href="//api.usercentrics.eu">
     <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
@@ -118,6 +118,14 @@
           "mainEntity": [
             {
               "@type": "Question",
+              "name": "Können wir TreueBiss vorher ansehen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Ein offener Demozugang zeigt Kasse und Verwaltung eines erfundenen Betriebs mit echten Zahlen. Änderungen sind darin abgeschaltet – Sie können alles ansehen und nichts auslösen. Die Zugangsdaten stehen auf dieser Seite. Ein eigener Zugang für Ihren Betrieb wird erst eingerichtet, wenn Sie sich dafür entscheiden."
+              }
+            },
+            {
+              "@type": "Question",
               "name": "Müssen unsere Kunden etwas installieren?",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -191,6 +199,7 @@
           <p class="subpage-lead">TreueBiss ersetzt die Papierkarte an der Theke – für Bäckereien, Metzgereien, Hofläden, Feinkost und Marktstände. Kunden brauchen keine Installation und kein Konto. Stempel vergibt ausschließlich der Server, und nur gegen einen Kaufnachweis. Vor einer dauerhaften Nutzung steht ein begrenzter Praxis-Zeitraum in einer Filiale, an dessen Ende Zahlen stehen statt eines Gefühls.</p>
           <div class="hero-actions">
             <a class="button" href="https://cal.com/byteundhandwerk/pilot-check-baeckerei" target="_blank" rel="noopener noreferrer">20-Minuten-Termin vereinbaren</a>
+            <a class="button button-outline" href="#ansehen">Demozugang ansehen</a>
             <a class="button button-outline" href="#preise">Preise ansehen</a>
           </div>
           <ul class="trust-list" aria-label="Rahmenbedingungen">
@@ -254,6 +263,54 @@
           <article><span>02</span><h3>Kauf nachweisen</h3><p>Entweder über den QR-Code auf dem Kassenbon oder, wenn die Kasse keinen druckt, über einen Tresen-QR, der sich fortlaufend ändert. Beides belegt einen Einkauf, der stattgefunden hat.</p></article>
           <article><span>03</span><h3>Server prüft und vergibt</h3><p>Derselbe Bon zählt genau einmal – auch dann, wenn er auf einem zweiten Handy erneut eingereicht wird. Der Stempel entsteht in der Datenbank, nicht auf dem Gerät.</p></article>
           <article><span>04</span><h3>Prämie einlösen</h3><p>Die volle Karte wird automatisch zum Gutschein. Eingelöst wird er an der Kasse mit einem Code, den nur der Betrieb kennt und jederzeit selbst ändern kann.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-white" id="ansehen">
+        <div class="section-heading">
+          <p class="eyebrow">Drei Ansichten, ein Datenbestand</p>
+          <h2>Was Kunde, Theke und Büro jeweils sehen.</h2>
+          <p>Die Karte läuft im Browser des Kunden, die Kasse auf einem beliebigen Gerät hinter der Theke, die Verwaltung am Rechner. Die Bilder sind Ansichten aus dem Demobetrieb – mit den Zahlen, die dort tatsächlich stehen.</p>
+        </div>
+        <div class="screens">
+          <figure>
+            <img src="assets/treuebiss-kunden-app.png" width="860" height="1800" loading="lazy" decoding="async" alt="Stempelkarte im Browser: sechs von zehn Feldern gefüllt, Schaltfläche „Stempel sammeln“, darunter Gutscheine und zwei Tagesangebote.">
+            <figcaption><b>Beim Kunden</b>Kein Store, keine Installation, kein Konto. Die Karte zeigt den Stand, die offenen Gutscheine und die Angebote des Tages.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/treuebiss-kasse.png" width="860" height="1800" loading="lazy" decoding="async" alt="Kassenansicht: Feld zum Einlösen einer Gutschein-Nummer und darunter der Tresen-QR-Code mit dem Hinweis, dass er in 42 Sekunden wechselt.">
+            <figcaption><b>An der Theke</b>Gutschein einlösen und der Tresen-Code, der sich fortlaufend ändert. Mehr braucht der Verkauf nicht.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/treuebiss-verwaltung.png" width="860" height="1800" loading="lazy" decoding="async" alt="Verwaltungsansicht mit Demo-Hinweis, Kennzahlen zu Teilnehmern und Stempeln, vier Quoten und einem Balken zum Füllstand der laufenden Karten.">
+            <figcaption><b>Im Büro</b>Ausgabe, Einlösung, Wiederkehr und der Füllstand aller laufenden Karten – Summen über Karten, nicht über Personen.</figcaption>
+          </figure>
+        </div>
+        <div class="article-callout">
+          <h3>Sehen Sie es sich selbst an</h3>
+          <p>Der Demozugang zeigt dieselbe Kasse und dieselbe Verwaltung wie oben, mit den Daten eines erfundenen Betriebs. Änderungen sind abgeschaltet – Sie können alles ansehen und nichts auslösen. Zwischen Kasse und Verwaltung wechseln Sie oben rechts.</p>
+          <dl class="credential-facts">
+            <div><dt>Adresse</dt><dd><a href="https://code-noob82.github.io/TreueBiss/verwaltung/" target="_blank" rel="noopener noreferrer">code-noob82.github.io/TreueBiss/verwaltung/</a></dd></div>
+            <div><dt>Anmeldung</dt><dd>demo@treuebiss.de</dd></div>
+            <div><dt>Passwort</dt><dd>demo</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="grenzen">
+        <div class="process-layout">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">Lieber vorher als hinterher</p>
+            <h2>Was TreueBiss ausdrücklich nicht kann.</h2>
+            <p class="text-muted">Die Karte kommt ohne Konto und ohne Anmeldung aus. Das ist der Grund, warum sie beim ersten Scan sofort funktioniert – und zugleich der Grund, warum vier Dinge nicht gehen. Sie stehen hier, damit Sie nicht erst danach fragen müssen.</p>
+            <p class="text-muted">Was ohne Identität funktioniert, gilt dafür für <em>jede</em> Karte: Kennzahlen über alle Karten, Angebote ab einem bestimmten Kartenstand, Nachrichten auf den Wallet-Pass. Der Betrieb sieht Zahlen, keine Personen.</p>
+          </div>
+          <div class="process-list">
+            <article><span>01</span><h3>Keine Newsletter</h3><p>E-Mail-Kampagnen brauchen eine Adresse. TreueBiss erhebt keine – auch nicht freiwillig, auch nicht später.</p></article>
+            <article><span>02</span><h3>Kein Geburtstagsbonus</h3><p>Der setzt ein Geburtsdatum voraus, ein Empfehlungsprogramm zwei wiedererkennbare Personen. Beides gibt es nicht.</p></article>
+            <article><span>03</span><h3>Keine Einzelansprache</h3><p>„Frau Müller war acht Wochen nicht da“ lässt sich nicht beantworten. Der Server kennt Karten, keine Namen.</p></article>
+            <article><span>04</span><h3>Keine Kasse, keine Neukunden</h3><p>TreueBiss ersetzt kein Kassensystem, macht keine Buchhaltung und bringt niemanden, der nicht ohnehin vorbeikommt.</p></article>
+          </div>
         </div>
       </section>
 
@@ -363,6 +420,7 @@
       <section class="section section-paper">
         <div class="section-heading"><p class="eyebrow">Kurz und konkret</p><h2>Häufige Fragen zur digitalen Stempelkarte.</h2></div>
         <div class="faq-list">
+          <details><summary>Können wir TreueBiss vorher ansehen?</summary><p>Ja. Ein offener Demozugang zeigt Kasse und Verwaltung eines erfundenen Betriebs mit echten Zahlen. Änderungen sind darin abgeschaltet – Sie können alles ansehen und nichts auslösen. Die Zugangsdaten stehen auf dieser Seite. Ein eigener Zugang für Ihren Betrieb wird erst eingerichtet, wenn Sie sich dafür entscheiden.</p></details>
           <details><summary>Müssen unsere Kunden etwas installieren?</summary><p>Nein. Die Karte läuft im Browser und wird über einen QR-Code am Tresen geöffnet. Wer möchte, legt sie zusätzlich als Pass in Apple Wallet oder Google Wallet ab – das ist freiwillig und für die Nutzung nicht nötig.</p></details>
           <details><summary>Brauchen wir eine neue Kasse?</summary><p>Nein. Druckt Ihre Kasse einen QR-Code auf den Bon, wird dieser genutzt. Druckt sie keinen, übernimmt ein Aufsteller am Tresen die Vergabe. In die Kasse selbst wird nicht eingegriffen.</p></details>
           <details><summary>Kann sich jemand mehrere Karten anlegen und doppelt sammeln?</summary><p>Beim Kassenbon nicht: Ein Bon wird genau einmal gezählt, unabhängig davon, auf welchem Gerät oder in welchem Browser er eingereicht wird. Beim Tresen-QR und bei einlösbaren Angeboten gilt die Begrenzung je Karte. Wer sich eine zweite Karte anlegt, fängt dort bei null an und muss für jeden weiteren Stempel erneut im Laden stehen.</p></details>
