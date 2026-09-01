@@ -1,0 +1,124 @@
+{
+  "site": {
+    "name": "byte & Handwerk",
+    "baseUrl": "https://byteundhandwerk.de",
+    "language": "de-de",
+    "feedTitle": "byte & Handwerk Praxiswissen",
+    "feedDescription": "Praxisnahe Beiträge über Digitalisierung im Handwerk, Arbeitsabläufe, digitale Piloten und technische Verantwortung.",
+    "indexNowKey": "34e86f2116a2510425b6c3e8c8b8b444"
+  },
+  "entries": [
+    {
+      "path": "index.html",
+      "url": "/",
+      "title": "Digitale Lösungen für das Lebensmittelhandwerk",
+      "description": "byte & Handwerk versteht zuerst den Arbeitsalltag und entwickelt dann die kleinste wirksame digitale Lösung für Betriebe im Lebensmittelhandwerk.",
+      "kind": "page",
+      "modifiedAt": "2026-08-09T12:00:00+02:00",
+      "sitemap": true,
+      "topics": ["Digitalisierung im Handwerk", "Produktvalidierung"]
+    },
+    {
+      "path": "mission.html",
+      "url": "/mission.html",
+      "title": "Haltung und Arbeitsweise",
+      "description": "Wie byte & Handwerk digitale Vorhaben prüft, begrenzt und an messbarer Wirkung ausrichtet.",
+      "kind": "page",
+      "modifiedAt": "2026-08-08T12:00:00+02:00",
+      "sitemap": true,
+      "topics": ["Produktvalidierung"]
+    },
+    {
+      "path": "team/dominik-baki/index.html",
+      "url": "/team/dominik-baki/",
+      "title": "Dominik Baki",
+      "description": "Gelernter Bäcker, App-Entwickler und Gründer von byte & Handwerk.",
+      "kind": "profile",
+      "modifiedAt": "2026-08-08T12:00:00+02:00",
+      "sitemap": true,
+      "topics": ["Autor"]
+    },
+    {
+      "path": "referenz-revierhege.html",
+      "url": "/referenz-revierhege.html",
+      "title": "RevierHege: Referenzprojekt und Produktvalidierung",
+      "description": "Wie aus einem realen Problem ein iOS-Pilot entstand, mit Nutzern geprüft und nach der Marktvalidierung bewusst nicht kommerziell weitergeführt wurde.",
+      "kind": "case-study",
+      "publishedAt": "2026-08-06T09:00:00+02:00",
+      "modifiedAt": "2026-08-09T12:00:00+02:00",
+      "sitemap": true,
+      "topics": ["Produktvalidierung", "Praxistest"],
+      "related": ["/blog-begruendetes-nein.html", "/blog-digitalisierung-handwerk.html"]
+    },
+    {
+      "path": "blog.html",
+      "url": "/blog.html",
+      "title": "Praxiswissen zu Produktvalidierung und Digitalisierung",
+      "description": "Beiträge von byte & Handwerk über Digitalisierung im Handwerk, Arbeitsabläufe, Produktvalidierung, digitale Piloten und technische Verantwortung.",
+      "kind": "collection",
+      "modifiedAt": "2026-08-24T11:00:00+02:00",
+      "sitemap": true,
+      "topics": ["Digitalisierung im Handwerk", "Produktvalidierung", "Technische Verantwortung"]
+    },
+    {
+      "path": "blog-digitalisierung-handwerk.html",
+      "url": "/blog-digitalisierung-handwerk.html",
+      "title": "Digitalisierung im Handwerk beginnt beim Ablauf",
+      "description": "Warum Arbeitsablauf, Engpass und messbare Wirkung vor der Auswahl oder Entwicklung einer Software geklärt werden sollten.",
+      "kind": "article",
+      "publishedAt": "2026-08-24T11:00:00+02:00",
+      "modifiedAt": "2026-08-24T11:00:00+02:00",
+      "author": "Dominik Baki",
+      "category": "Digitalisierung im Handwerk",
+      "image": "/assets/social-digitalisierung-handwerk.png",
+      "sitemap": true,
+      "feed": true,
+      "topics": ["Digitalisierung im Handwerk", "Prozessanalyse", "Praxistest"],
+      "related": ["/baeckerei-pilot.html", "/referenz-revierhege.html"]
+    },
+    {
+      "path": "blog-begruendetes-nein.html",
+      "url": "/blog-begruendetes-nein.html",
+      "title": "Warum ein begründetes Nein ein gutes Projektergebnis sein kann",
+      "description": "Was RevierHege über MVP, Praxistest und Marktvalidierung zeigt: Ein funktionierender Pilot kann zu einem begründeten Nein zur kommerziellen Weiterentwicklung führen.",
+      "kind": "article",
+      "publishedAt": "2026-08-06T11:00:00+02:00",
+      "modifiedAt": "2026-08-09T12:00:00+02:00",
+      "author": "Dominik Baki",
+      "category": "Produktvalidierung",
+      "image": "/assets/social-begruendetes-nein.png",
+      "sitemap": true,
+      "feed": true,
+      "topics": ["Produktvalidierung", "MVP", "Praxistest"],
+      "related": ["/referenz-revierhege.html", "/blog-digitalisierung-handwerk.html"]
+    },
+    {
+      "path": "blog-technische-partnerschaft.html",
+      "url": "/blog-technische-partnerschaft.html",
+      "title": "Verantwortung braucht Entscheidungsrechte",
+      "description": "Sieben Prüffragen für technische Partnerschaften: Produktumfang, Entscheidungsrechte, Finanzierung, Ressourcen, geistiges Eigentum und Chancen-Risiko-Verteilung.",
+      "kind": "article",
+      "publishedAt": "2026-08-06T10:00:00+02:00",
+      "modifiedAt": "2026-08-09T12:00:00+02:00",
+      "author": "Dominik Baki",
+      "category": "Technische Partnerschaft",
+      "image": "/assets/social-technische-partnerschaft.png",
+      "sitemap": true,
+      "feed": true,
+      "topics": ["Technische Verantwortung", "Produktvalidierung"],
+      "related": ["/mission.html", "/blog-begruendetes-nein.html"]
+    },
+    {
+      "path": "baeckerei-pilot.html",
+      "url": "/baeckerei-pilot.html",
+      "title": "Vier-Wochen-Pilot für bessere Mengenplanung",
+      "description": "Pilot für Bäckereien: Retouren reduzieren, Ausverkäufe im Blick behalten und tägliche Mengenentscheidungen vier Wochen lang messbar prüfen.",
+      "kind": "service",
+      "modifiedAt": "2026-08-09T12:00:00+02:00",
+      "image": "/assets/social-baeckerei-pilot.png",
+      "sitemap": true,
+      "topics": ["Bäckerei", "Mengenplanung", "Praxistest"],
+      "related": ["/blog-digitalisierung-handwerk.html", "/blog.html"]
+    }
+  ]
+}
