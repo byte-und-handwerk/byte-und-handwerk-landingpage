@@ -306,7 +306,7 @@ p {
 .subpage-hero h1 span {
   display: block;
   margin-top: 12px;
-  color: var(--clay);
+  color: var(--clay-dark);
 }
 
 .hero-lead,
@@ -338,7 +338,7 @@ p {
 
 .trust-list li::before {
   margin-right: 8px;
-  color: var(--clay);
+  color: var(--clay-dark);
   content: "•";
 }
 
@@ -507,6 +507,60 @@ p {
 
 .section-deep {
   background: var(--paper-deep);
+}
+
+/*
+ * Dunkle Flaechen kippen --muted, statt jede Regel einzeln zu ueberschreiben.
+ *
+ * --muted ist dunkle Tinte. Auf dunklem Grund ist jede Regel, die sie setzt,
+ * unsichtbarer Text - und davon gibt es viele: .section-heading > p,
+ * .about-copy > p, .article-content p, .text-muted. Bisher stand gegen jede
+ * eine eigene Ausnahme, und wer eine vergass oder die Spezifitaet einer
+ * bestehenden Regel anhob, machte Text unlesbar. Genau das ist am 31.08. auf
+ * vier Seiten passiert und beim Beheben am 02.09. noch einmal.
+ *
+ * Hier kippt stattdessen der Wert selbst. Jede Regel, die var(--muted) setzt,
+ * wird damit automatisch hell - ohne dass sie davon wissen muss, und ohne
+ * dass die Spezifitaet eine Rolle spielt.
+ */
+/*
+ * Der Kipp braucht beide Richtungen. Eine helle Insel in einer dunklen
+ * Flaeche - .decision-sheet im .hero-panel, .blog-card im Teaser - erbt sonst
+ * den hellen Wert und schreibt Weiss auf Weiss. Deshalb setzen helle
+ * Flaechen den Ausgangswert zurueck.
+ */
+.decision-sheet,
+.balance-card,
+.focus-facts div,
+.article-main,
+.article-callout,
+.article-question-list div,
+.blog-card,
+.search-result-card,
+.search-empty-state,
+.reference-product-card,
+.measurement-card,
+.field-sheet,
+.values-list div,
+.credential-document,
+.legal-card,
+.simple-card {
+  --muted: rgba(23, 33, 38, 0.68);
+  --line: rgba(23, 33, 38, 0.16);
+}
+
+.section-dark,
+.hero-panel,
+.audience-strip,
+.pilot-stats,
+.site-footer,
+.share-panel,
+.pilot-board,
+.journal-teaser .blog-card,
+.blog-card:nth-child(2),
+.search-result-card:nth-child(3n + 2) {
+  --muted: rgba(255, 255, 255, 0.64);
+  --line: rgba(255, 255, 255, 0.22);
 }
 
 .section-dark {
@@ -733,7 +787,7 @@ p {
   position: absolute;
   top: 0.1em;
   left: 0;
-  color: var(--clay);
+  color: var(--clay-dark);
   content: "✓";
   font-weight: 800;
 }
@@ -755,7 +809,7 @@ p {
 }
 
 .focus-facts strong {
-  color: var(--clay);
+  color: var(--clay-dark);
   font-size: 2.3rem;
   letter-spacing: -0.05em;
 }
@@ -946,7 +1000,7 @@ p {
 }
 
 .blog-board .decision-sheet > span {
-  color: var(--clay);
+  color: var(--clay-dark);
 }
 
 .blog-board .panel-footnote strong {
@@ -963,7 +1017,15 @@ p {
   transform: rotate(-1deg);
 }
 
-.search-board .decision-sheet > span,
+/*
+ * Zwei Kontexte, zwei Gruen. Beide standen bisher auf #8fb79b: auf dem
+ * dunklen Feld 7,34 : 1, auf dem hellen Blatt 2,2 : 1. Ein einziger Wert
+ * kann das nicht - das dunkle Gruen kaeme auf dem Feld auf 2,52.
+ */
+.search-board .decision-sheet > span {
+  color: var(--green);
+}
+
 .search-board .panel-footnote strong {
   color: #8fb79b;
 }
@@ -1073,7 +1135,7 @@ p {
 
 .search-result-meta {
   margin: 0;
-  color: var(--clay);
+  color: var(--clay-dark);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.72rem;
   font-weight: 800;
@@ -1320,6 +1382,12 @@ p {
   font-size: 1.08rem;
 }
 
+/* Gleiche Spezifitaet wie die Regel darueber, nur spaeter: Die Marke im
+   Beitrag bleibt Gold, ohne dass irgendwo eine Spezifitaet steigt. */
+.article-content .eyebrow-light {
+  color: var(--gold-soft);
+}
+
 .article-content p {
   margin: 0 0 24px;
 }
@@ -1390,7 +1458,7 @@ p {
 .article-question-list span {
   display: block;
   margin-bottom: 8px;
-  color: var(--clay);
+  color: var(--clay-dark);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.75rem;
   font-weight: 800;
@@ -1543,7 +1611,12 @@ p {
 }
 
 .problem-grid .accent-card {
-  background: var(--clay);
+  /*
+   * Zurueck auf --clay-dark. Mit dem helleren --clay trug der Absatz darauf
+   * 3,78 : 1 und die Nummer 3,34 - beides unter AA. Dunkler gefasst sind es
+   * 5,52 und 5,02, ohne dass die Karte ihre Rolle als Akzent verliert.
+   */
+  background: var(--clay-dark);
 }
 
 .principle-quote {
@@ -1587,7 +1660,7 @@ p {
 }
 
 .steps-grid span {
-  color: var(--clay);
+  color: var(--clay-dark);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-weight: 800;
 }
@@ -1633,7 +1706,7 @@ p {
 }
 
 .field-sheet span {
-  color: rgba(23, 33, 38, 0.5);
+  color: var(--muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.74rem;
   text-transform: uppercase;
