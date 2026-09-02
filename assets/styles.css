@@ -1425,6 +1425,40 @@ p {
   text-align: center;
 }
 
+/* Drei Telefonansichten nebeneinander. Mindestbreite statt fester Spaltenzahl:
+   Auf dem Telefon stehen sie untereinander, ohne eigene Umbruchregel. */
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(24px, 4vw, 44px);
+  margin: 0 0 64px;
+}
+
+.screens figure {
+  margin: 0;
+}
+
+.screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.screens figcaption {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.screens figcaption b {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+
 .article-hero h1,
 .article-content h2,
 .article-content h3,
