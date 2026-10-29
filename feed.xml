@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>byte &amp; Handwerk Praxiswissen</title>
+    <link>https://byteundhandwerk.de/blog</link>
+    <description>Praxisnahe Beiträge über Produktvalidierung, digitale Pilotprojekte und technische Verantwortung.</description>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://byteundhandwerk.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google-Unternehmensprofil: Was ich an meinem eigenen korrigiert habe</title>
+      <link>https://byteundhandwerk.de/blog-google-unternehmensprofil</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-google-unternehmensprofil</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Ratgeber</category>
+      <description>Ein Profil je Unternehmen, keine Leistungen im Namen, keine Öffnungszeiten bei Terminen: was Google verlangt und was ich an meinem Profil geändert habe.</description>
+    </item>
+    <item>
+      <title>Website-Relaunch: Was meine eigene Website über meine Arbeit zeigt</title>
+      <link>https://byteundhandwerk.de/blog-website-relaunch</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-website-relaunch</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Werkstattbericht</category>
+      <description>23 Tage bis zum Livegang, 86 Pull Requests, 62 Belege: wie ich meine Website neu entwickelt habe und was Sie daran über ein Projekt mit mir sehen.</description>
+    </item>
+    <item>
+      <title>KI-Funktionen in der eigenen App: Was die KI-Verordnung verlangt</title>
+      <link>https://byteundhandwerk.de/blog-ki-verordnung-apps</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-ki-verordnung-apps</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Ratgeber</category>
+      <description>Chat, KI-Texte, KI-Bilder: Was die KI-Verordnung (EU AI Act) seit August 2026 von Apps verlangt, wer Anbieter ist und welche Fristen sich verschoben haben.</description>
+    </item>
+    <item>
+      <title>Kontolöschung in der App: Was Apple und Google verlangen</title>
+      <link>https://byteundhandwerk.de/blog-kontoloeschung-in-apps</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-kontoloeschung-in-apps</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Ratgeber</category>
+      <description>Wer in einer App ein Konto anlegen lässt, muss es dort auch löschen lassen. Was Apple und Google verlangen und wie EmigrateIn das umsetzt.</description>
+    </item>
+    <item>
+      <title>App entwickeln lassen: Was Sie vorher klären und wie es dann läuft</title>
+      <link>https://byteundhandwerk.de/blog-app-entwickeln-lassen</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-app-entwickeln-lassen</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Ratgeber</category>
+      <description>App entwickeln lassen: was Sie vor dem ersten Gespräch klären, wer infrage kommt, in welchen Schritten eine App entsteht und was sie kostet.</description>
+    </item>
+    <item>
+      <title>Wie ich KI in der App-Entwicklung einsetze – und wo nicht</title>
+      <link>https://byteundhandwerk.de/blog-ki-in-der-app-entwicklung</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-ki-in-der-app-entwicklung</guid>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Arbeitsweise</category>
+      <description>Claude Code, Codex, Gemini und DeutschlandGPT: wie ich KI-Werkzeuge gegeneinander prüfen lasse, was Fehler abfängt und wo ich ohne KI arbeite.</description>
+    </item>
+    <item>
+      <title>Meine Entwicklung beginnt mit einem Gespräch, nicht mit Code</title>
+      <link>https://byteundhandwerk.de/blog-vom-gespraech-zum-mvp</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-vom-gespraech-zum-mvp</guid>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <category>Arbeitsweise</category>
+      <description>Erstes Gespräch, klickbarer Prototyp ohne Code, Tickets und erst dann das MVP: wie App-Projekte bei mir beginnen und was Sie in jedem Schritt davon haben.</description>
+    </item>
+    <item>
+      <title>Produktionsplanung für Bäckereien: Was Software wirklich leisten muss</title>
+      <link>https://byteundhandwerk.de/blog-produktionsplanung-baeckerei</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-produktionsplanung-baeckerei</guid>
+      <pubDate>Mon, 31 Aug 2026 07:30:00 GMT</pubDate>
+      <category>Mengenplanung</category>
+      <description>Wie Software die Produktionsplanung einer Bäckerei unterstützen kann: Datenbasis, Ausverkäufe, Retouren und erklärbare Vorschläge.</description>
+    </item>
+    <item>
+      <title>Digitalisierung im Handwerk beginnt beim Ablauf</title>
+      <link>https://byteundhandwerk.de/blog-digitalisierung-handwerk</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-digitalisierung-handwerk</guid>
+      <pubDate>Mon, 31 Aug 2026 07:00:00 GMT</pubDate>
+      <category>Digitalisierung</category>
+      <description>Wie Handwerksbetriebe Arbeitsablauf, Engpass und messbare Wirkung klären, bevor sie in Software investieren.</description>
+    </item>
+    <item>
+      <title>Welche Kassendaten braucht eine Bäckerei für Mengenplanung und Retourenauswertung?</title>
+      <link>https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-kassendaten-mengenplanung-baeckerei</guid>
+      <pubDate>Sat, 22 Aug 2026 07:00:00 GMT</pubDate>
+      <category>Kassendaten</category>
+      <description>Welche Verkaufs-, Verfügbarkeits- und Retourendaten Bäckereien für belastbare Mengenentscheidungen benötigen.</description>
+    </item>
+    <item>
+      <title>Vom Schüttelkolben zum Pilotprojekt: Was Softwareentwicklung von regulierten Prozessen lernen kann</title>
+      <link>https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-schuettelkolben-pilotprojekt</guid>
+      <pubDate>Fri, 21 Aug 2026 07:00:00 GMT</pubDate>
+      <category>Prozessvalidierung</category>
+      <description>Was Software-Pilotprojekte von begrenzten Versuchen, dokumentierten Messgrößen, SOPs und der kontrollierten Übertragung in einen größeren Maßstab lernen können.</description>
+    </item>
+    <item>
+      <title>Bäckerei-Insolvenzen 2026: Welche Kosten Betriebe selbst beeinflussen können</title>
+      <link>https://byteundhandwerk.de/blog-baeckerei-insolvenzen-2026</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-baeckerei-insolvenzen-2026</guid>
+      <pubDate>Sat, 15 Aug 2026 07:00:00 GMT</pubDate>
+      <category>Bäckerhandwerk</category>
+      <description>63 Insolvenzen zeigen wirtschaftlichen Druck. Welche Kosten Bäckereien bei Retouren, Ausverkäufen und Mengenplanung selbst prüfen und beeinflussen können.</description>
+    </item>
+    <item>
+      <title>Warum ein begründetes Nein ein gutes Projektergebnis sein kann</title>
+      <link>https://byteundhandwerk.de/blog-begruendetes-nein</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-begruendetes-nein</guid>
+      <pubDate>Thu, 06 Aug 2026 09:00:00 GMT</pubDate>
+      <category>Produktvalidierung</category>
+      <description>RevierHege zeigt: Ein funktionierender Pilot kann einen konkreten Nutzen bestätigen und trotzdem gegen eine kommerzielle Weiterentwicklung sprechen.</description>
+    </item>
+    <item>
+      <title>Verantwortung braucht Entscheidungsrechte</title>
+      <link>https://byteundhandwerk.de/blog-technische-partnerschaft</link>
+      <guid isPermaLink="true">https://byteundhandwerk.de/blog-technische-partnerschaft</guid>
+      <pubDate>Thu, 06 Aug 2026 08:00:00 GMT</pubDate>
+      <category>Technische Partnerschaft</category>
+      <description>Sieben Prüffragen für technische Partnerschaften: Produktumfang, Entscheidungsrechte, Finanzierung, Ressourcen und Chancen-Risiko-Verteilung.</description>
+    </item>
+  </channel>
+</rss>
