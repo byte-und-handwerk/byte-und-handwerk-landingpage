@@ -1,0 +1,45 @@
+# byte & Handwerk
+
+> Native Apps, Web-Apps und Backends vom Prototyp bis zur Veröffentlichung. Sechs Pakete mit Festpreis, von einem gelernten Bäcker in Mannheim.
+
+byte & Handwerk ist das Einzelunternehmen von Dominik Baki in Mannheim, für Kunden in ganz Deutschland. Termine vor Ort sind nach Absprache möglich. Kontakt: info@byteundhandwerk.de oder das Formular unter https://byteundhandwerk.de/projektanfrage. Das Erstgespräch ist kostenlos. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
+
+## Pakete mit Festpreis
+
+- [App-Entwicklung zum Festpreis](https://byteundhandwerk.de/leistungen): Sechs Pakete mit Festpreis: Quick-Fix 230 €, klickbarer Prototyp 1.600 €, PoC 2.670 €, MVP 14.340 €, Full-Service-App ab 31.040 €, Wartung 440 € im Monat.
+- [Quick-Fix für Apps zum Festpreis](https://byteundhandwerk.de/quick-fix): Das Brötchen: bis zu zwei Stunden für einen Bugfix, ein kleines Update, ein Code-Review oder eine technische Beratung. Festpreis 230 Euro, mit Kurzbericht.
+- [Klickbarer Prototyp für Ihre App](https://byteundhandwerk.de/klickbarer-prototyp): Die Schautorte: Ihre App als klickbarer Prototyp ohne Code, bis zu acht Bildschirme in einer Woche. Festpreis 1.600 Euro, voll angerechnet auf das MVP.
+- [PoC-Sprint: Prototyp in 1–2 Wochen](https://byteundhandwerk.de/poc-sprint): Das Probebacken: ein lauffähiger Prototyp, der die eine Frage beantwortet, an der Ihr Vorhaben hängt. Ein bis zwei Wochen, Festpreis 2.670 Euro.
+- [MVP-Entwicklung zum Festpreis](https://byteundhandwerk.de/mvp-entwicklung): Das Sauerteigbrot: ein MVP für iOS, Android oder als Web-App mit bis zu fünf Kernfunktionen, Backend und Testgruppe. 6–10 Wochen, Festpreis 14.340 Euro.
+- [Full-Service-App für iOS und Android](https://byteundhandwerk.de/app-entwicklung-full-service): Die Hochzeitstorte: Konzept, Gestaltung, App für iOS und Android, Backend und die Einreichung in beiden Stores. Ab 31.040 Euro.
+- [App-Wartung im Monatsabo](https://byteundhandwerk.de/app-wartung): Das Brötchen-Abo: bis zu vier Stunden im Monat für Updates, neue Systemversionen, Fehlerberichte und kleine Korrekturen. 440 Euro im Monat.
+- [App-Entwicklung: Kosten und Festpreise](https://byteundhandwerk.de/app-entwicklung-kosten): Was kostet eine App? Sechs Festpreise von 230 € bis ab 31.040 €: wovon der Preis abhängt, was dazukommt und wie frühere Schritte angerechnet werden.
+
+## Für wen
+
+- [App-Entwicklung für Startups](https://byteundhandwerk.de/startups): Erst die riskanteste Frage mit einem PoC-Sprint klären, dann ein MVP mit echter Testgruppe entwickeln. Festpreise und ein Ansprechpartner.
+- [App-Entwicklung für den Mittelstand](https://byteundhandwerk.de/mittelstand): Interne Apps, Kundenportale und Web-Apps, die in vorhandene Abläufe passen. Erst den Ablauf verstehen, dann entwickeln – zu Festpreisen und dokumentiert.
+- [White-Label-App-Entwicklung für Agenturen](https://byteundhandwerk.de/agenturen): Ich setze Apps für Ihre Kunden im Hintergrund um: in Ihrem Namen, nach Ihren Vorgaben und zu Festpreisen, mit denen Sie kalkulieren können.
+- [Für Bäckereien und Lebensmittelhandwerk](https://byteundhandwerk.de/lebensmittelhandwerk): Für Bäckereien, Metzgereien und Hofläden: der Daten-Eignungscheck für die Mengenplanung und TreueBiss, die digitale Stempelkarte.
+
+## Eigene Produkte und Referenzen
+
+- [TreueBiss: Stempelkarte für Bäckereien](https://byteundhandwerk.de/treuebiss): Digitale Stempelkarte für Bäckereien, Metzgereien und Hofläden: Stempel gegen den QR-Code auf dem Kassenbon. Erst vier Wochen Praxis, dann entscheiden.
+- [Stempelkarte erstellen: Vorlage als PDF](https://byteundhandwerk.de/stempelkarte-erstellen): Eine Stempelkarte erstellen, ohne selbst zu gestalten: kostenlose Vorlage mit 10 Karten im Visitenkartenformat auf einem A4-Blatt, als PDF zum Ausdrucken.
+- [Daten-Eignungscheck für Bäckereien](https://byteundhandwerk.de/baeckerei-pilot): Daten-Eignungscheck für Bäckereien: Datenlage, Systeme und wirtschaftliche Ausgangswerte prüfen, bevor ein Mengenplanungs-Pilot angeboten wird.
+- [Referenzen: Apps für iOS, Android und Web](https://byteundhandwerk.de/referenzen): RevierHege, TreueBiss und EmigrateIn: drei eigene Apps mit offenem Stand – native iOS- und Android-Apps, eine Web-App und die Backends dahinter.
+- [RevierHege: Pilot und Produktentscheidung](https://byteundhandwerk.de/referenz-revierhege): Wie aus einem realen Problem eine App für iOS und Android entstand, mit einer Pilotgruppe geprüft und nach der Marktprüfung nicht aktiv vermarktet wurde.
+- [Referenz EmigrateIn: iOS-MVP](https://byteundhandwerk.de/referenz-emigratein): EmigrateIn bündelt Checklisten, Inhalte je Bundesland und Kontakte deutscher Auslandsvertretungen in einer iOS-App. Abschlussprojekt, bewertet mit „sehr gut“.
+
+## Arbeitsweise und Person
+
+- [Arbeitsweise: planen, entwickeln, betreuen](https://byteundhandwerk.de/arbeitsweise): Erst verstehen, dann prüfen, dann entwickeln und betreuen: der Backablauf von byte & Handwerk, die Grundsätze dahinter und was Sie von mir erwarten können.
+- [Nativ, plattformübergreifend oder Web-App?](https://byteundhandwerk.de/plattformen): Native App, plattformübergreifend oder Web-App: wann welcher Weg passt, was er kostet und wo meine Erfahrung liegt. Eine ehrliche Entscheidungshilfe.
+- [Glossar: App-Begriffe einfach erklärt](https://byteundhandwerk.de/glossar): Glossar zur App-Entwicklung: 32 Fachbegriffe wie MVP, PoC, Backend und TestFlight, einfach erklärt. Dazu, welches Paket hinter welchem Backnamen steckt.
+- [Dominik Baki: Bäcker und App-Entwickler](https://byteundhandwerk.de/ueber-mich): Gelernter Bäcker, 17 Jahre regulierte Produktion, heute App-Entwickler für iOS, Android und Web: Stationen, Qualifikationen und Gesellenbrief.
+- [Profilseite von Dominik Baki](https://dominikbaki.com/)
+
+## Optional
+
+- [Blog: Pilotprojekte, Belege, Entscheidungen](https://byteundhandwerk.de/blog): Beiträge dazu, wie Annahmen geprüft, Pilotprojekte begrenzt und Entscheidungen begründet werden – aus der App-Entwicklung und dem Lebensmittelhandwerk.
+- [App entwickeln lassen: So gehen Sie vor](https://byteundhandwerk.de/blog-app-entwickeln-lassen): App entwickeln lassen: was Sie vor dem ersten Gespräch klären, wer infrage kommt, in welchen Schritten eine App entsteht und was sie kostet.
