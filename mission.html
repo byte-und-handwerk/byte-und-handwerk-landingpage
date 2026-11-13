@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Weitergeleitet</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://byteundhandwerk.de/arbeitsweise">
+    <script>
+      function mergeTargetUrl(target, search, hash, origin) {
+  var url = new URL(target, origin);
+  new URLSearchParams(search).forEach(function (value, key) {
+    url.searchParams.set(key, value);
+  });
+  if (hash) url.hash = hash;
+  return url.toString();
+}
+      location.replace(mergeTargetUrl("/arbeitsweise", location.search, location.hash, location.origin));
+    </script>
+    <meta http-equiv="refresh" content="0; url=/arbeitsweise">
+  </head>
+  <body>
+    <p>Diese Seite ist umgezogen: <a href="/arbeitsweise">https://byteundhandwerk.de/arbeitsweise</a></p>
+  </body>
+</html>
